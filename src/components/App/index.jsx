@@ -1,4 +1,6 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components';
+import Theme from '../../assets/styles/themes/default.jsx';
 import Title from '../titles'
 import Navbar from '../navbar'
 import Hero from '../hero'
@@ -16,13 +18,14 @@ function App() {
 
   return (
     <>
+    <ThemeProvider theme={Theme}>
       <GlobalStyles/>
       <Container>
-        <Title>CARROCEL CAIPIRA</Title>
+        <Navbar>
+
+        </Navbar>
       </Container>
-        
-      
-    
+      </ThemeProvider>
     </>
   )
 }

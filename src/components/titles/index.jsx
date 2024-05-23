@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './styles.jsx'
 
 function Title(props){
@@ -11,5 +12,9 @@ function Title(props){
 
     )
 }
+
+Title.propTypes = {
+  children: PropTypes.node,
+};
 
 export default Title
