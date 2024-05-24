@@ -1,12 +1,14 @@
 import React from 'react'
-import './styles.jsx'
+import {Foo, } from './styles.jsx'
 
 
 function Footer(){
     return (
-        <>
 
-        </>
+        <Foo>
+          
+        </Foo>
+
     )
 }
 

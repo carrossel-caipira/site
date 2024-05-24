@@ -1,12 +1,14 @@
 import React from 'react'
 import logo from '../../assets/images/logo_carrossel.svg'
-import { Nav, LinkItems, Logo, LogoText, NavLink } from './styles.jsx'
+import { Nav, LinkItems, Logo, LogoText, NavLink, LogoImage } from './styles.jsx'
 
 function Navbar() {
   return (
     <Nav>
       <Logo>
-        <img src={logo} alt="Logo.carrosel" width="77" />
+        <LogoImage>
+          <img src={logo} alt="Logo.carrosel" width="77" />
+        </LogoImage>
         <LogoText>Carrossel Caipira</LogoText>
       </Logo>
       <LinkItems>

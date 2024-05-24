@@ -7,6 +7,8 @@ export const Nav = styled.nav`
   align-items: center;
   height: 92px;
   color: white;
+  font-family: Advent Pro;
+
 `;
 
 export const Logo = styled.div`
@@ -14,11 +16,18 @@ export const Logo = styled.div`
   margin-left: 61px;
   align-items: center;
   gap: 12px;
+
+`;
+export const LogoImage = styled.div`
+  transition: transform 0.7s ease; /* Adicione essa linha para suavizar a transição */
+
+  &:hover {
+    transform: rotate(360deg); /* Rotação de 180 graus no hover */
+  }
 `;
 
 export const LogoText = styled.span`
   font-size: 54px;
-  font-family: Advent Pro;
 `;
 
 export const LinkItems = styled.div`
@@ -27,9 +36,15 @@ export const LinkItems = styled.div`
   font-size: 30px;
   gap: 50px;
   margin-right: 61px;
-  font-family: Advent Pro;
 `;
 
 export const NavLink = styled(Link)`
   cursor: pointer;
+  transition: font-size 0.2s ease;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    font-size: 32px;
+    border-bottom: 2px solid white;
+  }
 `;
