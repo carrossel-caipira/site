@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components';
 import Theme from '../../assets/styles/themes/default.jsx';
-import Title from '../titles'
+import Title from '../Title'
 import Navbar from '../navbar'
 import Hero from '../hero'
 import AboutUs from '../aboutUs'
@@ -24,6 +24,7 @@ function App() {
         <Navbar>
 
         </Navbar>
+        <AboutUs/>
       </Container>
       </ThemeProvider>
     </>
