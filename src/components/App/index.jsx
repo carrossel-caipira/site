@@ -25,6 +25,7 @@ function App() {
 
         </Navbar>
         <AboutUs/>
+        <History/>
         <Footer>
 
         </Footer>
