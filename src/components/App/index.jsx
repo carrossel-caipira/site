@@ -25,6 +25,9 @@ function App() {
 
         </Navbar>
         <AboutUs/>
+        <Footer>
+
+        </Footer>
       </Container>
       </ThemeProvider>
     </>
