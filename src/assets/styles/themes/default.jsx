@@ -4,6 +4,7 @@ export default {
   titleColor: '#63B3D2',
   subTitleColor: '#454545',
   paragraphColor: '#6B6B6B',
+  colorBgCopy: "#131313",
 
   // spacing
   margin_xs: ".236em",
@@ -12,4 +13,8 @@ export default {
   margin_l: "1em",
   margin_xl: "1.618em",
   margin_xxl: "2.618em",
+
+  //fonts
+  fontPop: "Poppins",
+  fontBow: "Bowlby One Sc",
 }
