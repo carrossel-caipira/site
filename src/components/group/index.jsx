@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css';
+import './styles.css';
 import claytonImage from './fotos/clayton.png';
 import dogImage from './fotos/dog.png';
 
@@ -20,13 +20,13 @@ const perfis = [
 
 function ListaPerfis() {
     const [indiceInicial, setIndiceInicial] = useState(0);
-  
+
     function rolar(direcao) {
       let novoIndice = indiceInicial;
       novoIndice = direcao === 'esquerda'
         ? Math.max(novoIndice - 1, 0)
         : Math.min(novoIndice + 1, perfis.length - 3);
-  
+
       setIndiceInicial(novoIndice);
     }
 

@@ -25,7 +25,7 @@ function App() {
 
         </Navbar>
         <AboutUs/>
-        {/*<History/> Quebrando o site*/} 
+        {/*<History/> Quebrando o site*/}
         <Footer>
 
         </Footer>
