@@ -23,7 +23,7 @@ function App() {
       <Container>
         <Navbar/>
         <AboutUs/>
-        {/*<History/> Quebrando o site*/}
+        <History/>
         <Sponsors/>
         <Footer/>
       </Container>

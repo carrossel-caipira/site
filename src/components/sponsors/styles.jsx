@@ -12,7 +12,7 @@ export const Patrocinadores = styled.div`
   position: relative;
 
   & ${Title} {
-    
+
     color: ${props => props.theme.titleColor2};
   }
 `;
