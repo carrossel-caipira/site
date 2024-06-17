@@ -21,14 +21,11 @@ function App() {
     <ThemeProvider theme={Theme}>
       <GlobalStyles/>
       <Container>
-        <Navbar>
-
-        </Navbar>
+        <Navbar/>
         <AboutUs/>
         {/*<History/> Quebrando o site*/}
-        <Footer>
-
-        </Footer>
+        <Sponsors/>
+        <Footer/>
       </Container>
       </ThemeProvider>
     </>

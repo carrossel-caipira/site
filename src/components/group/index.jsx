@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './styles.css';
 import claytonImage from './fotos/clayton.png';
 import dogImage from './fotos/dog.png';
+import Mancha from '../../assets/images/mancha_bot_group.svg';
 
 const perfis = [
     { nome: 'Clayton', imagem: claytonImage },

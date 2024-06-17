@@ -8,6 +8,7 @@ export const Nav = styled.nav`
   height: 92px;
   color: white;
   font-family: Advent Pro;
+  background-color: ${props => props.theme.darkBg};
 
 `;
 
