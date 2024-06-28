@@ -1,6 +1,6 @@
-import React from 'react'
-import logo from '../../assets/images/logo_carrossel.svg'
-import { Nav, LinkItems, Logo, LogoText, NavLink, LogoImage } from './styles.jsx'
+import React from 'react';
+import logo from '../../assets/images/logo_carrossel.svg';
+import { Nav, LinkItems, Logo, LogoText, NavLink, LogoImage } from './styles.jsx';
 
 function Navbar() {
   return (
@@ -12,12 +12,18 @@ function Navbar() {
         <LogoText>Carrossel Caipira</LogoText>
       </Logo>
       <LinkItems>
-        <NavLink to="section1" smooth={true}>Membros</NavLink>
-        <NavLink to="section2" smooth={true}>História</NavLink>
-        <NavLink to="section3" smooth={true}>Contato</NavLink>
+        <NavLink to="group" smooth={true} spy={true} offset={-70} duration={500}>
+          Membros
+        </NavLink>
+        <NavLink to="history" smooth={true} spy={true} offset={-70} duration={500}>
+          História
+        </NavLink>
+        <NavLink to="footer" smooth={true} spy={true} offset={-70} duration={500}>
+          Contato
+        </NavLink>
       </LinkItems>
     </Nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

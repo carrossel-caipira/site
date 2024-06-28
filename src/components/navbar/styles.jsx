@@ -8,7 +8,6 @@ export const Nav = styled.nav`
   height: 92px;
   color: white;
   font-family: Advent Pro;
-  background-color: ${props => props.theme.darkBg};
 
 `;
 
@@ -20,10 +19,10 @@ export const Logo = styled.div`
 
 `;
 export const LogoImage = styled.div`
-  transition: transform 0.7s ease; /* Adicione essa linha para suavizar a transição */
+  transition: transform 0.7s ease;
 
   &:hover {
-    transform: rotate(360deg); /* Rotação de 180 graus no hover */
+    transform: rotate(360deg);
   }
 `;
 
