@@ -8,8 +8,7 @@ export const CarrosselStyles = styled.div`
   width: 40vw;
   height: 4.25em;
   font-size: 4.235em;
-  justify-content: center;
-  gap: ${props => props.theme.margin_m};
+  justify-content: enter;
   gap: 10px;
 
   background-color: ${props => props.theme.titleColor};
@@ -18,8 +17,15 @@ export const CarrosselStyles = styled.div`
 
   & img {
     height: 4em;
+    transition: left ease-in-out .75s;
+    position: relative;
+    left: 0px;
   }
 `
+/*
+    transform: translateX(${() => offset / 2});
+    transform: translateX(calc(-20vw - ${() => offset}px));
+*/
 
 export const Hist = styled.section`
   display: flex;
