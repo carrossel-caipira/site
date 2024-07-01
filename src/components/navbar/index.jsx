@@ -15,10 +15,10 @@ function Navbar() {
         <NavLink to="group" smooth={true} spy={true} offset={-70} duration={500}>
           Membros
         </NavLink>
-        <NavLink to="history" smooth={true} spy={true} offset={-70} duration={500}>
+        <NavLink to="historia" smooth={true} spy={true} offset={-70} duration={500}>
           História
         </NavLink>
-        <NavLink to="footer" smooth={true} spy={true} offset={-70} duration={500}>
+        <NavLink to="contato" smooth={true} spy={true} offset={-70} duration={500}>
           Contato
         </NavLink>
       </LinkItems>

@@ -8,7 +8,7 @@ import Paragraph from '../Paragraph/index.jsx';
 
 function AboutUs(props){
     return (
-        <About className={props.className}>
+        <About id="about-us" className={props.className}>
             <Title>SOBRE NÓS</Title>
             <CardsContainer>
                 <InfoCard>
