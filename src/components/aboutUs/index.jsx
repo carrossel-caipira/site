@@ -6,9 +6,9 @@ import Title from '../Title/index.jsx'
 import SubTitle from '../SubTitle/index.jsx'
 import Paragraph from '../Paragraph/index.jsx';
 
-function AboutUs(){
+function AboutUs(props){
     return (
-        <About>
+        <About className={props.className}>
             <Title>SOBRE NÓS</Title>
             <CardsContainer>
                 <InfoCard>

@@ -9,10 +9,10 @@ import Footer from '../footer';
 import Sponsors from '../sponsors';
 import Group from '../group';
 import History from '../history';
-import Container from './styles.jsx';
+import { Container, ManchaHistory } from './styles.jsx';
 import GlobalStyles from '../../assets/styles/global.jsx';
+import manchaHistory from '../../assets/images/mancha_history.svg'
 
-import './styles.jsx';
 
 function App() {
   return (
@@ -21,18 +21,12 @@ function App() {
         <GlobalStyles />
         <Container>
           <Hero />
-           {/* <AboutUs />
-           <Sponsors />
-         <div id="history">
-            <History />
-          </div>
-
-          <div id="group">
-            <Group />
-          </div>
-          <div id="footer">
-            <Footer />
-          </div> */}
+          <AboutUs />
+          <History />
+          <ManchaHistory src={manchaHistory} />
+          <Group />
+          <Sponsors />
+          <Footer />
         </Container>
       </ThemeProvider>
     </>

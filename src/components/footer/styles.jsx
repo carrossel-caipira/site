@@ -15,7 +15,7 @@ export const Background = styled.div`
 export const ImageFooter = styled.div `
   grid-area: img;
   width: 50vw;
-  height:60vh;
+  height:100%;
   img{
     width: 50vw;
     height: 100%;
@@ -31,7 +31,7 @@ export const TextFooter = styled.div `
   color: white;
   width: 50vw;
   font-family: ${props => props.theme.fontBow};
-  
+
 
 `;
 
@@ -79,7 +79,7 @@ export const ImagesFooter = styled.div`
     "fb ig lk gm"
     "unesp unesp unesp unesp"
   ;
-  
+
   a{
     width:59px;
   }

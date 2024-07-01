@@ -49,5 +49,5 @@ export const About = styled.section`
     }
 
     font-size: 4.235rem;
-    margin-bottom: ${props => props.theme.margin_xxl}
 `
+    //margin-bottom: ${props => props.theme.margin_xxl}

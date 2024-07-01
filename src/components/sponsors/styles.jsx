@@ -1,16 +1,17 @@
 import styled from "styled-components";
 import Title from '../Title';
 
+// box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 export const Patrocinadores = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   height: 100vh;
   width: 100vw;
   background-color: ${props => props.theme.lightBg};
   position: relative;
+  z-index: -2;
 
   & ${Title} {
     color: ${props => props.theme.titleColor2};
@@ -25,10 +26,14 @@ export const Patrocinadores = styled.div`
 
 export const StainTop = styled.img`
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 20vh;
+  right: -20vw;
+  top: -40%;
+  width: 40vw;
+  background-size: contain;
+  z-index: -1;
+`;
 
+/*
   @media (max-width: 768px) {
     width: 10vh;
   }
@@ -37,13 +42,17 @@ export const StainTop = styled.img`
     width: 8vh;
   }
 `;
+*/
 
 export const StainBottom = styled.img`
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 20vh;
+  left: -15vw;
+  bottom: -70%;
+  width: 30vw;
+  z-index: -1;
+`;
 
+/*
   @media (max-width: 768px) {
     width: 10vh;
   }
@@ -52,6 +61,7 @@ export const StainBottom = styled.img`
     width: 8vh;
   }
 `;
+*/
 
 export const MainImage = styled.img`
   max-width: 600px;

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './styles.css';
 import claytonImage from './fotos/clayton.png';
 import dogImage from './fotos/dog.png';
-import Mancha from '../../assets/images/mancha_bot_group.svg';
+import Title from '../Title/'
+import Paragraph from '../Paragraph/'
 
 const perfis = [
     { nome: 'Clayton', imagem: claytonImage },
@@ -32,19 +33,21 @@ function ListaPerfis() {
     }
 
   return (
-    <div className="container">
-      <h2 className="titulo">EQUIPE</h2>
-      <button onClick={() => rolar('esquerda')} className="seta">&lt;</button>
-      <div className="perfis">
-        {perfis.slice(indiceInicial, indiceInicial + 3).map((perfil, index) => (
-          <div key={perfil.nome + index} className="perfil">
-            <img src={perfil.imagem} alt={perfil.nome} />
-            <p>{perfil.nome}</p>
-          </div>
-        ))}
+    <section className="group">
+      <Title>Equipe</Title>
+      <div className="container">
+        <button onClick={() => rolar('esquerda')} className="seta">&lt;</button>
+        <div className="perfis">
+          {perfis.slice(indiceInicial, indiceInicial + 3).map((perfil, index) => (
+            <div key={perfil.nome + index} className="perfil">
+              <img src={perfil.imagem} alt={perfil.nome} />
+              <Paragraph>{perfil.nome}</Paragraph>
+            </div>
+          ))}
+        </div>
+        <button onClick={() => rolar('direita')} className="seta">&gt;</button>
       </div>
-      <button onClick={() => rolar('direita')} className="seta">&gt;</button>
-    </div>
+    </section>
   );
 }
 
