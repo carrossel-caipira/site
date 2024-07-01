@@ -36,6 +36,7 @@ export const Hist = styled.section`
   width: 100vw;
 
   & ${Title} {
+    color: ${props => props.theme.titleColor2};
     margin-bottom: ${props => props.theme.margin_l};
   }
 

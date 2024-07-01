@@ -99,7 +99,7 @@ function Carrossel(props) {
 
 function History(){
   return (
-    <Hist>
+    <Hist className="historia">
       <Title>HISTORIA</Title>
       <Carrossel>
         <img src={imgCarrossel} alt="time carrossel"/>

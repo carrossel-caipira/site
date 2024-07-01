@@ -10,7 +10,7 @@ import unesp from '../../assets/images/logo_unesp.svg'
 
 function Footer(){
     return (
-        <Background>
+        <Background className="contato">
           <TextFooter>
             <Where>
               <TittleFooter>
@@ -26,8 +26,8 @@ function Footer(){
               </TittleFooter>
               <Info>
                 <ImagesFooter>
-                  <a href=""><img className="fb" src={fb} alt="facebook" /></a>
-                  <a href=""><img className="ig" src={ig} alt="instagram" /></a>
+                  <a href="https://www.facebook.com/carrosselcaipirabauru/?locale=pt_BR"><img className="fb" src={fb} alt="facebook" /></a>
+                  <a href="https://www.instagram.com/carrosselcaipira/"><img className="ig" src={ig} alt="instagram" /></a>
                   <a href=""><img className="lkd" src={lkd} alt="linkedin" /></a>
                   <a href=""><img className="gm" src={gm} alt="gmail" /></a>
                   <a href=""><img className="unesp" src={unesp} alt="unesp" /></a>
