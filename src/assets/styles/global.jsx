@@ -10,4 +10,8 @@ export default createGlobalStyle`
   body {
     overflow-x: hidden;
   }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
 `;

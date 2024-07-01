@@ -12,6 +12,7 @@ import History from '../history';
 import { Container, ManchaHistory } from './styles.jsx';
 import GlobalStyles from '../../assets/styles/global.jsx';
 import manchaHistory from '../../assets/images/mancha_history.svg'
+import ScrollBar from '../ScrollBar/'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <>
       <ThemeProvider theme={Theme}>
         <GlobalStyles />
+        <ScrollBar />
         <Container>
           <Hero />
           <AboutUs />
