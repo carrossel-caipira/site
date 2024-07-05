@@ -10,6 +10,7 @@ export const Background = styled.div`
   ;
 
   background-color: ${props => props.theme.darkBg};
+  margin-bottom: 0 !important;
 `;
 
 export const ImageFooter = styled.div `

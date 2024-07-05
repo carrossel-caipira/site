@@ -5,6 +5,8 @@ import { Link } from 'react-scroll';
 export const HeroS = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   min-height: 100vh;
   width: 100vw;
   background-image: url(${backzao});
@@ -18,28 +20,34 @@ export const HeroS = styled.div`
 
 export const DivMeio = styled.div`
   display: flex;
-  margin-top: 80px;
   align-items: center;
-  margin-left: 123px;
-  margin-right: 123px;
-  height: 608px;
-  position: relative;
+  gap: 10vw;
+  height: 65vh;
+
+  @media(max-width: ${props => props.theme.deviceMobile}) {
+    height: auto;
+    flex-direction: column;
+    gap: 5vh;
+  }
 `;
 
 export const RobotImg = styled.img`
-  max-width: 600px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  max-height: 100%;
+  width: min(32vw, 65vh);
+  aspect-ratio: 1;
+
+  @media(max-width: ${props => props.theme.deviceMobile}) {
+    width: 80vw;
+  }
 `;
 
 export const Texto = styled.img`
   max-width: 1200px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 40vw;
+
+  @media(max-width: ${props => props.theme.deviceMobile}) {
+    width: 80vw;
+  }
 `;
 
 const fadeIn = keyframes`
@@ -53,22 +61,18 @@ const fadeIn = keyframes`
 
 const arrowDownAnimation = keyframes`
   0% {
-    transform: translateY(0) translateX(-50%);
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(5px) translateX(-50%);
+    transform: translateY(5px);
   }
   100% {
-    transform: translateY(0) translateX(-50%);
+    transform: translateY(0);
   }
 `;
 
 export const Botaoimg = styled.img`
   max-width: 60px;
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
   cursor: pointer;
   transition: opacity 0.3s ease;
   animation: ${arrowDownAnimation} 2s infinite;
@@ -85,4 +89,11 @@ export const Botaoimg = styled.img`
 
 export const Linkz = styled(Link)`
   cursor: pointer;
+  max-width: 60px;
+  width: 7.5vw;
+  margin-block: 5vh;
+
+  @media(max-width: ${props => props.theme.deviceMobile}) {
+    width: 10vh;
+  }
 `;

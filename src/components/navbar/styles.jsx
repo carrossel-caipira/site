@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   height: 92px;
   color: white;
   font-family: Advent Pro;
-
+  width: 100vw;
 `;
 
 export const Logo = styled.div`

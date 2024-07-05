@@ -26,8 +26,8 @@ function Hero() {
     <HeroS>
       <Navbar />
       <DivMeio >
-        <RobotImg src={imagem} alt="robo carrossel" />
         <Texto src={titulohero} alt="titulo hero" />
+        <RobotImg src={imagem} alt="robo carrossel" />
       </DivMeio>
       <Linkz
         to="about-us"

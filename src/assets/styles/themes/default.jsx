@@ -15,7 +15,10 @@ export default {
   margin_xl: "1.618em",
   margin_xxl: "2.618em",
 
-  //fonts
+  // fonts
   fontPop: "Poppins",
   fontBow: "Bowlby One Sc",
+
+  // devices
+  deviceMobile: "650px",
 }
