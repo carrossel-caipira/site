@@ -5,10 +5,11 @@ import Paragraph from '../Paragraph/'
 export const CarrosselStyles = styled.div`
   display: flex;
   align-items: center;
-  width: 40vw;
+  width: 50vw;
+  min-width: 600px;
   height: 4.25em;
   font-size: 4.235em;
-  justify-content: enter;
+  justify-content: center;
   gap: 10px;
 
   background-color: ${props => props.theme.titleColor};
@@ -22,10 +23,6 @@ export const CarrosselStyles = styled.div`
     left: 0px;
   }
 `
-/*
-    transform: translateX(${() => offset / 2});
-    transform: translateX(calc(-20vw - ${() => offset}px));
-*/
 
 export const Hist = styled.section`
   display: flex;
@@ -45,7 +42,8 @@ export const Hist = styled.section`
   }
 
   & ${Paragraph} {
-    width: 30vw;
+    width: 35em;
+    max-width: 80vw;
     text-align: center;
     color: white;
   }
