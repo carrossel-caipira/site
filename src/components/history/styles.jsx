@@ -17,7 +17,7 @@ export const CarrosselStyles = styled.div`
   mask-image: linear-gradient(to right, transparent, rgb(0 0 0 / 100%), transparent);
 
   & img {
-    height: 4em;
+    height: 95%;
     transition: left ease-in-out .75s;
     position: relative;
     left: 0px;
