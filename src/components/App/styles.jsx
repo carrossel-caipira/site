@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// TODO: editar mancha history para ser menos extrema
 
 let aspectRatio = 1920/2110;
 

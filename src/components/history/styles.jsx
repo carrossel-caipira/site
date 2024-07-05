@@ -31,6 +31,7 @@ export const Hist = styled.section`
   align-items:center;
   height: 100vh;
   width: 100vw;
+  margin-top: 12.5vh; /* aconta pela mancha_history */
 
   & ${Title} {
     color: ${props => props.theme.titleColor2};
