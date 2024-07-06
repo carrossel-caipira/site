@@ -1,13 +1,11 @@
 import styled from "styled-components";
 import Title from '../Title';
 
-// box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 export const Patrocinadores = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100vw;
   background-color: ${props => props.theme.lightBg};
   position: relative;
@@ -15,6 +13,7 @@ export const Patrocinadores = styled.div`
 
   & ${Title} {
     color: ${props => props.theme.titleColor2};
+    margin-bottom: ${props => props.theme.margin_l};
   }
 
   @media (max-width: 768px) {
@@ -25,62 +24,34 @@ export const Patrocinadores = styled.div`
 `;
 
 export const StainTop = styled.img`
-  position: absolute;
-  right: -20vw;
-  top: -40%;
+  position: relative;
+  left: 52.5vw;
+  transform: translateY(55%);
   width: 40vw;
+  margin-top: -35vw;
   background-size: contain;
   z-index: -1;
-`;
 
-/*
-  @media (max-width: 768px) {
-    width: 10vh;
-  }
-
-  @media (max-width: 480px) {
-    width: 8vh;
+  @media(max-width: ${props => props.theme.deviceMobile}) {
+    left: 60vw;
   }
 `;
-*/
 
 export const StainBottom = styled.img`
-  position: absolute;
-  left: -15vw;
-  bottom: -70%;
+  position: relative;
+  left: -50vw;
   width: 30vw;
+  bottom: 2vw;
+  max-width: 600px;
   z-index: -1;
+  margin-bottom: calc(-30vw - 11.08723rem/2);
 `;
-
-/*
-  @media (max-width: 768px) {
-    width: 10vh;
-  }
-
-  @media (max-width: 480px) {
-    width: 8vh;
-  }
-`;
-*/
 
 export const MainImage = styled.img`
-  max-width: 600px;
-  margin-bottom: ${props => props.theme.margin_l};
+  width: 50vw;
+  min-width: 450px;
 
-  @media (max-width: 1024px) {
-    max-width: 400px;
-    align-items: center;
-  }
-
-  @media (max-width: 768px) {
-    max-width: 200px;
-    margin-bottom: ${props => props.theme.margin_m};
-    align-items: center;
-  }
-
-  @media (max-width: 480px) {
-    max-width: 100%;
-    margin-bottom: ${props => props.theme.margin_s};
-    align-items: center;
+  @media(max-width: ${props => props.theme.deviceMobile}) {
+    width: 70vw;
   }
 `;
