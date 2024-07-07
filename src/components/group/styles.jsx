@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const GroupSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -13,6 +12,8 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  width: 100%;
 `;
 
 export const SetaButton = styled.button`
@@ -31,19 +32,31 @@ export const SetaButton = styled.button`
     opacity: 0.7;
     animation-play-state: paused;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+`;
+
+export const PerfisWrapper = styled.div`
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
 `;
 
 export const PerfisContainer = styled.div`
   display: flex;
-  overflow: auto;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease-in-out;
+  width: calc(100% * ${props => props.perfisLength || 1});
 `;
 
 export const PerfilContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 ${props => props.theme.margin_xxl};
+  width: calc(100% / 3);
+  flex-shrink: 0;
 `;
 
 export const PerfilImg = styled.img`
@@ -62,8 +75,8 @@ export const BorderImpar = styled(PerfilImg)`
 `;
 
 export const Texto = styled.h3`
-    margin-top: ${props => props.theme.margin_s};
-    color: black;
-    font-family: Poppins;
-    font-size: 1.5rem;
+  margin-top: ${props => props.theme.margin_s};
+  color: black;
+  font-family: Poppins;
+  font-size: 1.5rem;
 `;
