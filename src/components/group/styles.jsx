@@ -55,7 +55,7 @@ export const PerfilContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% / 3);
+  width: ${props => `calc(100% / ${props.itemsVisiveis})`};
   flex-shrink: 0;
 `;
 

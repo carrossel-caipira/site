@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Title from '../Title/';
 import setaD from '../../assets/images/seta-right.svg';
@@ -31,27 +31,45 @@ const perfis = [
 
 function ListaPerfis() {
   const [indiceInicial, setIndiceInicial] = useState(0);
+  const [itemsVisiveis, setItemsVisiveis] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1200) {
+        setItemsVisiveis(3);
+      } else if (window.innerWidth >= 800) {
+        setItemsVisiveis(2);
+      } else {
+        setItemsVisiveis(1);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Chama a função na montagem para definir o estado inicial
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   function rolar(direcao) {
     let novoIndice = indiceInicial;
     novoIndice = direcao === 'esquerda'
       ? Math.max(novoIndice - 1, 0)
-      : Math.min(novoIndice + 1, perfis.length - 3);
+      : Math.min(novoIndice + 1, perfis.length - itemsVisiveis);
 
     setIndiceInicial(novoIndice);
   }
 
   return (
     <GroupSection>
-      <Title>Equipe</Title>
+      <Title className='group'>Equipe</Title>
       <Container>
         <SetaButton onClick={() => rolar('esquerda')} disabled={indiceInicial === 0}>
           <img src={setaE} alt="Seta esquerda" />
         </SetaButton>
         <PerfisWrapper>
-          <PerfisContainer style={{ transform: `translateX(-${indiceInicial * 100 / 3}%)` }}>
+          <PerfisContainer style={{ transform: `translateX(-${indiceInicial * 100 / itemsVisiveis}%)` }}>
             {perfis.map(perfil => (
-              <PerfilContainer key={perfil.id}>
+              <PerfilContainer key={perfil.id} itemsVisiveis={itemsVisiveis}>
                 {perfil.id % 2 === 0 ? (
                   <BorderPar src={perfil.imagem} alt={perfil.nome} />
                 ) : (
@@ -62,7 +80,7 @@ function ListaPerfis() {
             ))}
           </PerfisContainer>
         </PerfisWrapper>
-        <SetaButton onClick={() => rolar('direita')} disabled={indiceInicial === perfis.length - 3}>
+        <SetaButton onClick={() => rolar('direita')} disabled={indiceInicial === perfis.length - itemsVisiveis}>
           <img src={setaD} alt="Seta direita" />
         </SetaButton>
       </Container>
