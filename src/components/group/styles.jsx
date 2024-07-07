@@ -42,13 +42,14 @@ export const SetaButton = styled.button`
 export const PerfisWrapper = styled.div`
   overflow: hidden;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
 `;
 
 export const PerfisContainer = styled.div`
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: calc(100% * ${props => props.perfisLength || 1});
+
 `;
 
 export const PerfilContainer = styled.div`
@@ -57,6 +58,7 @@ export const PerfilContainer = styled.div`
   align-items: center;
   width: ${props => `calc(100% / ${props.itemsVisiveis})`};
   flex-shrink: 0;
+
 `;
 
 export const PerfilImg = styled.img`

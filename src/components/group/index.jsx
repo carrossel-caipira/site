@@ -45,7 +45,7 @@ function ListaPerfis() {
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Chama a função na montagem para definir o estado inicial
+    handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
