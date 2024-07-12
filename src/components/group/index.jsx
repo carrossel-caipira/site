@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
 import Title from '../Title/';
 import setaD from '../../assets/images/seta-right.svg';
 import setaE from '../../assets/images/seta-left.svg';
@@ -60,8 +59,8 @@ function ListaPerfis() {
   }
 
   return (
-    <GroupSection>
-      <Title className='group'>Equipe</Title>
+    <GroupSection className='group'>
+      <Title>Equipe</Title>
       <Container>
         <SetaButton onClick={() => rolar('esquerda')} disabled={indiceInicial === 0}>
           <img src={setaE} alt="Seta esquerda" />

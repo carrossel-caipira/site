@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
 import { HeroS, RobotImg, DivMeio, Texto, Botaoimg, Linkz } from './styles';
 import Navbar from '../navbar/index';
 import imagem from '../../assets/images/robozin.png';
 import titulohero from '../../assets/images/titulo_hero.svg';
 import imgbutao from '../../assets/images/angles-down-solid.svg';
-import History from '../history/index';
-import Group from '../group/index';
-import Footer from '../footer/index';
+
 
 function Hero() {
   const [clicked, setClicked] = useState(false);
@@ -23,7 +20,7 @@ function Hero() {
   };
 
   return (
-    <HeroS>
+    <HeroS className='hero'>
       <Navbar />
       <DivMeio >
         <Texto src={titulohero} alt="titulo hero" />

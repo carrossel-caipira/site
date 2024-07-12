@@ -32,8 +32,6 @@ export const TextFooter = styled.div `
   color: white;
   width: 50vw;
   font-family: ${props => props.theme.fontBow};
-
-
 `;
 
 export const Copy = styled.div `
@@ -72,6 +70,7 @@ export const Info = styled.div`
   font-size: 20px;
   text-align: justify;
   margin-top: 3vh;
+  font-family: ${props => props.theme.fontPop};
 `
 export const ImagesFooter = styled.div`
   width:25%;

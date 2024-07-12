@@ -5,28 +5,40 @@ import { Nav, Logo, LogoText, LogoImage, LinkItems, NavLink, Hamburger, MobileMe
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [Mobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isSticky, setIsSticky] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 650);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const handleResize = useCallback(() => {
-    setIsMobile(window.innerWidth < 768);
-    if (window.innerWidth >= 768) {
+    setIsMobile(window.innerWidth < 650);
+    if (window.innerWidth >= 650) {
       setIsOpen(false);
     }
   }, []);
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
     window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
+
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [handleResize]);
 
   return (
-    <Nav>
+    <Nav className={isSticky ? 'sticky' : ''}>
       <Logo>
         <LogoImage>
           <img src={logo} alt="Logo.carrosel" />
@@ -37,6 +49,9 @@ function Navbar() {
         {isOpen ? <FaTimes /> : <FaBars />}
       </Hamburger>
       <LinkItems>
+        <NavLink to="hero" smooth={true} spy={true} offset={-70} duration={500}>
+          Inicio
+        </NavLink>
         <NavLink to="group" smooth={true} spy={true} offset={-70} duration={500}>
           Membros
         </NavLink>
@@ -48,6 +63,9 @@ function Navbar() {
         </NavLink>
       </LinkItems>
       <MobileMenu isOpen={isOpen}>
+      <NavLink onClick={toggleMenu} to="hero" smooth={true} spy={true} offset={-70} duration={500}>
+          Inicio
+        </NavLink>
         <NavLink onClick={toggleMenu} to="group" smooth={true} spy={true} offset={-70} duration={500}>
           Membros
         </NavLink>

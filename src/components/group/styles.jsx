@@ -5,10 +5,11 @@ export const GroupSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 80px;
 `;
 
 export const Container = styled.div`
-  margin-top: 100px;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
