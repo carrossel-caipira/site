@@ -1,11 +1,18 @@
 import styled from 'styled-components';
+import Title from '../Title/';
+
+export const CustomTitle = styled(Title)`
+  margin-top: 100px;
+`;
+
 
 export const GroupSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  //margin-top: 80px;
+
 `;
 
 export const Container = styled.div`

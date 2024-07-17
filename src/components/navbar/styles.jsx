@@ -42,10 +42,10 @@ export const Nav = styled.nav`
 export const Logo = styled.div`
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: clamp(0.5rem, 1vw, 12px);
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
-    gap: 8px;
+    gap: clamp(0.2rem, 1vw, 8px);
   }
 `;
 
@@ -53,8 +53,7 @@ export const LogoImage = styled.div`
   transition: transform 0.7s ease;
 
   img {
-    width: 4vw;
-
+    width: clamp(3rem, 4vw, 4vw);
 
     @media (max-width: ${props => props.theme.deviceMobile}) {
       width: 8vw;
@@ -67,23 +66,25 @@ export const LogoImage = styled.div`
 `;
 
 export const LogoText = styled.span`
-  font-size: 3.375vw;
+  font-size: clamp(2.275rem, 3.375vw, 3.375vw);
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
-    font-size: 5vw;
+    font-size: clamp(5vw, 5vw, 5vw);
   }
 `;
+
 
 export const LinkItems = styled.div`
   display: flex;
   align-items: center;
-  font-size: 1.875vw;
-  gap: 3.125vw;
+  gap: clamp(1rem, 3vw, 3.125vw);
+  font-size: clamp(1.3rem, 2vw, 1.6875rem);
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
     display: none;
   }
 `;
+
 
 export const NavLink = styled(Link)`
   cursor: pointer;
@@ -95,7 +96,7 @@ export const NavLink = styled(Link)`
   }
 
   &:hover {
-    font-size: 2vw;
+    font-size: clamp(1.2rem, 2vw, 1.75rem);
     border-bottom: 2px solid white;
   }
 `;

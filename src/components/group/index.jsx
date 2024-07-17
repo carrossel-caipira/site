@@ -16,7 +16,8 @@ import {
   PerfilContainer,
   BorderPar,
   BorderImpar,
-  Texto
+  Texto,
+  CustomTitle,
 } from './styles';
 
 const perfis = [
@@ -60,7 +61,7 @@ function ListaPerfis() {
 
   return (
     <GroupSection className='group'>
-      <Title>Equipe</Title>
+      <CustomTitle>Equipe</CustomTitle>
       <Container>
         <SetaButton onClick={() => rolar('esquerda')} disabled={indiceInicial === 0}>
           <img src={setaE} alt="Seta esquerda" />
@@ -84,6 +85,7 @@ function ListaPerfis() {
         </SetaButton>
       </Container>
     </GroupSection>
+
   );
 }
 
