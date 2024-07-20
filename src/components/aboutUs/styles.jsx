@@ -10,7 +10,7 @@ export const InfoCard = styled.div`
     height: fit-content;
     padding: 3rem;
 
-    border: solid 2px gray;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     border-radius: 2rem;
 
     & ${SubTitle} {

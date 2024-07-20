@@ -3,6 +3,7 @@ import Title from '../Title/';
 
 export const CustomTitle = styled(Title)`
   margin-top: 100px;
+  //color: ${props => props.theme.darkBg};
 `;
 
 
@@ -73,20 +74,20 @@ export const PerfilImg = styled.img`
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  border: 8px solid;
+  border: 6px solid;
 `;
 
 export const BorderPar = styled(PerfilImg)`
-  border-color: ${props => props.theme.titleColor2};
+  border-color: ${props => props.theme.titleColor};
 `;
 
 export const BorderImpar = styled(PerfilImg)`
-  border-color: ${props => props.theme.titleColor};
+  border-color: ${props => props.theme.titleColor2};
 `;
 
 export const Texto = styled.h3`
   margin-top: ${props => props.theme.margin_s};
   color: black;
   font-family: Poppins;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 `;

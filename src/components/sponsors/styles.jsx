@@ -48,7 +48,7 @@ export const StainBottom = styled.img`
 `;
 
 export const MainImage = styled.img`
-  width: 50vw;
+  width: 40vw;
   min-width: 450px;
 
   @media(max-width: ${props => props.theme.deviceMobile}) {
