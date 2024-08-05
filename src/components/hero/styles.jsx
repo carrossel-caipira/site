@@ -89,8 +89,8 @@ export const Botaoimg = styled.img`
 
 export const Linkz = styled(Link)`
   cursor: pointer;
-  max-width: 60px;
-  width: 7.5vw;
+  max-width: 40px;
+  width: 2vw;
   margin-block: 5vh;
 
   @media(max-width: ${props => props.theme.deviceMobile}) {

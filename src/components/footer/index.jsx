@@ -35,15 +35,14 @@ function Footer() {
           <TittleFooter>Contatos</TittleFooter>
           <Info>
             <ImagesFooter>
-              <a href="https://www.facebook.com/carrosselcaipirabauru/?locale=pt_BR"><img className="fb" src={fb} alt="facebook" /></a>
-              <a href="https://www.instagram.com/carrosselcaipira/"><img className="ig" src={ig} alt="instagram" /></a>
-              <a href="#"><img className="lkd" src={lkd} alt="linkedin" /></a>
-              <a href="#" onClick={handleGmailClick}>
+              <a href="https://www.facebook.com/carrosselcaipirabauru/?locale=pt_BR"><img className="fb" src={fb} alt="facebook" target='_blank' /></a>
+              <a href="https://www.instagram.com/carrosselcaipira/"><img className="ig" src={ig} alt="instagram" target='_blank'/></a>
+              <a href="#"><img className="lkd" src={lkd} alt="linkedin" target='_blank' /></a>
+              <a href="mailto:carrosselcaipira@gmail.com" target='_blank'>
                 <img className="gm" src={gm} alt="gmail" />
               </a>
               <a href="https://www.fc.unesp.br/#!/"><img className="unesp" src={unesp} alt="unesp" /></a>
             </ImagesFooter>
-            {copied && <div className="msg">Email copiado!</div>}
           </Info>
         </Contact>
       </TextFooter>

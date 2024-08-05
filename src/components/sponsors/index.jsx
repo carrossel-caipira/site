@@ -9,7 +9,7 @@ function Sponsors() {
     return (
         <Patrocinadores>
             <StainTop src={ManchaT} alt="Mancha Top"/>
-            <Title>PATROCINADORES</Title>
+            <Title>patrocinadores</Title>
             <MainImage src={Recogna} alt="Imagem Principal" />
             <StainBottom src={ManchaB} alt="Mancha Bottom" />
         </Patrocinadores>

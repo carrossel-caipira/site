@@ -34,7 +34,7 @@ export const Hist = styled.section`
   margin-top: 12.5vh; /* aconta pela mancha_history */
 
   & ${Title} {
-    color: ${props => props.theme.titleColor2};
+    color: ${props => props.theme.titleColor};
     margin-bottom: ${props => props.theme.margin_l};
   }
 

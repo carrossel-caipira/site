@@ -53,5 +53,6 @@ export const MainImage = styled.img`
 
   @media(max-width: ${props => props.theme.deviceMobile}) {
     width: 70vw;
+    min-width: 70vw;
   }
 `;

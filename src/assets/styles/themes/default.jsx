@@ -20,5 +20,5 @@ export default {
   fontBow: "Bowlby One Sc",
 
   // devices
-  deviceMobile: "650px",
+  deviceMobile: "768px",
 }

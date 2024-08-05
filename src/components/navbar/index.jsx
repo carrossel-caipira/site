@@ -52,11 +52,14 @@ function Navbar() {
         <NavLink to="hero" smooth={true} spy={true} offset={-70} duration={500}>
           Inicio
         </NavLink>
-        <NavLink to="group" smooth={true} spy={true} offset={-70} duration={500}>
-          Membros
+        <NavLink to="about-us" smooth={true} spy={true} offset={-125} duration={500}>
+          Sobre Nós
         </NavLink>
         <NavLink to="historia" smooth={true} spy={true} offset={-70} duration={500}>
           História
+        </NavLink>
+        <NavLink to="group" smooth={true} spy={true} offset={-70} duration={500}>
+          Membros
         </NavLink>
         <NavLink to="contato" smooth={true} spy={true} offset={-70} duration={500}>
           Contato
@@ -64,13 +67,16 @@ function Navbar() {
       </LinkItems>
       <MobileMenu isOpen={isOpen}>
       <NavLink onClick={toggleMenu} to="hero" smooth={true} spy={true} offset={-70} duration={500}>
-          Inicio
+          Início
         </NavLink>
-        <NavLink onClick={toggleMenu} to="group" smooth={true} spy={true} offset={-70} duration={500}>
-          Membros
+        <NavLink to="about-us" smooth={true} spy={true} offset={-125} duration={500}>
+          Sobre Nós
         </NavLink>
         <NavLink onClick={toggleMenu} to="historia" smooth={true} spy={true} offset={-70} duration={500}>
           História
+        </NavLink>
+        <NavLink onClick={toggleMenu} to="group" smooth={true} spy={true} offset={-70} duration={500}>
+          Membros
         </NavLink>
         <NavLink onClick={toggleMenu} to="contato" smooth={true} spy={true} offset={-70} duration={500}>
           Contato

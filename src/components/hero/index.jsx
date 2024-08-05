@@ -30,7 +30,7 @@ function Hero() {
         to="about-us"
         smooth={true}
         spy={true}
-        offset={-70}
+        offset={-125}
         duration={500}
       >
         <Botaoimg

@@ -9,7 +9,7 @@ import Footer from '../footer';
 import Sponsors from '../sponsors';
 import Group from '../group';
 import History from '../history';
-import { Container, ManchaHistory } from './styles.jsx';
+import { Container, ManchaHistory, ManchaContainer } from './styles.jsx';
 import GlobalStyles from '../../assets/styles/global.jsx';
 import manchaHistory from '../../assets/images/mancha_history.svg'
 import ScrollBar from '../ScrollBar/'
@@ -25,7 +25,9 @@ function App() {
           <Hero />
           <AboutUs />
           <History />
-          <ManchaHistory src={manchaHistory} />
+          <ManchaContainer>
+            <ManchaHistory src={manchaHistory} />
+          </ManchaContainer>
           <Group />
           <Sponsors />
           <Footer />

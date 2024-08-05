@@ -33,6 +33,7 @@ export const Copy = styled.div`
   font-family: ${props => props.theme.fontPop};
   font-size: 15px;
   z-index: 1;
+  width: 100vw;
 `;
 
 export const Where = styled.div`
@@ -128,7 +129,7 @@ export const ImageWrapper = styled.div`
     z-index: 0;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     img {
       width: 100%;
       height: 100%;

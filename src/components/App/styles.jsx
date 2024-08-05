@@ -25,3 +25,6 @@ export const ManchaHistory = styled.img`
   margin-bottom: calc(min(-${1/aspectRatio * 100}vw, -${1/aspectRatio * 1400}px) + 75px );
   z-index: -1;
 `
+export const ManchaContainer = styled.div`
+  width:100vw;
+`

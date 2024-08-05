@@ -33,11 +33,12 @@ function ListaPerfis() {
   const [indiceInicial, setIndiceInicial] = useState(0);
   const [itemsVisiveis, setItemsVisiveis] = useState(3);
 
+  console.log(window.innerWidth)
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1200) {
         setItemsVisiveis(3);
-      } else if (window.innerWidth >= 800) {
+      } else if (window.innerWidth >= 768) {
         setItemsVisiveis(2);
       } else {
         setItemsVisiveis(1);
@@ -61,7 +62,7 @@ function ListaPerfis() {
 
   return (
     <GroupSection className='group'>
-      <CustomTitle>Equipe</CustomTitle>
+      <CustomTitle>equipe</CustomTitle>
       <Container>
         <SetaButton onClick={() => rolar('esquerda')} disabled={indiceInicial === 0}>
           <img src={setaE} alt="Seta esquerda" />
