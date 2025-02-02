@@ -21,4 +21,5 @@ export default {
 
   // devices
   deviceMobile: "650px",
+
 }

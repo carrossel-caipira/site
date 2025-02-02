@@ -5,12 +5,11 @@ export const Background = styled.div`
   width: 100vw;
   grid-template-areas:
     "texto"
-    "copy"
-  ;
-  background-color: ${props => props.theme.darkBg};
+    "copy";
+  background-color: ${(props) => props.theme.darkBg};
   margin-bottom: 0 !important;
   overflow: hidden;
-  position: relative;
+  position: sticky;
   height: auto;
 `;
 
@@ -19,20 +18,24 @@ export const TextFooter = styled.div`
   color: white;
   background-color: transparent;
   width: 100%;
-  font-family: ${props => props.theme.fontBow};
+  font-family: ${(props) => props.theme.fontBow};
 `;
 
 export const Copy = styled.div`
-  background-color: ${props => props.theme.colorBgCopy};
+  background-color: ${(props) => props.theme.colorBgCopy};
   grid-area: copy;
   height: 7vh;
   display: flex;
   color: white;
   justify-content: center;
   align-items: center;
-  font-family: ${props => props.theme.fontPop};
+  font-family: ${(props) => props.theme.fontPop};
   font-size: 15px;
   z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+  }
 `;
 
 export const Where = styled.div`
@@ -40,6 +43,7 @@ export const Where = styled.div`
   margin-top: 3vh;
   width: 500px;
   background-color: transparent;
+  z-index: -1;
 `;
 
 export const Contact = styled.div`
@@ -47,10 +51,11 @@ export const Contact = styled.div`
   margin-top: 5vh;
   background-color: transparent;
   margin-bottom: 3vh;
+  z-index: -1;
 `;
 
 export const TittleFooter = styled.div`
-  color: ${props => props.theme.titleColor};
+  color: white;
   font-size: 1.5rem;
   font-weight: 800;
 `;
@@ -61,8 +66,9 @@ export const Info = styled.div`
   font-weight: 500;
   text-align: justify;
   margin-top: 3vh;
-  font-family: ${props => props.theme.fontPop};
+  font-family: ${(props) => props.theme.fontPop};
   background-color: transparent;
+  z-index: -1;
 
   .msg {
     grid-area: msg;
@@ -79,11 +85,11 @@ export const Info = styled.div`
 export const ImagesFooter = styled.div`
   width: 15%;
   display: grid;
+  z-index:-1;
 
   grid-template-areas:
     "fb ig lk gm"
-    "unesp unesp unesp unesp"
-  ;
+    "unesp unesp unesp unesp";
 
   a {
     width: 35px;
@@ -128,7 +134,7 @@ export const ImageWrapper = styled.div`
     z-index: 0;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1098px) {
     img {
       width: 100%;
       height: 100%;

@@ -8,10 +8,10 @@ import { Patrocinadores, StainTop, StainBottom, MainImage } from './styles.jsx';
 function Sponsors() {
     return (
         <Patrocinadores>
-            <StainTop src={ManchaT} alt="Mancha Top"/>
+            {/* <StainTop src={ManchaT} alt="Mancha Top"/> */}
             <Title>PATROCINADORES</Title>
             <MainImage src={Recogna} alt="Imagem Principal" />
-            <StainBottom src={ManchaB} alt="Mancha Bottom" />
+            {/* <StainBottom src={ManchaB} alt="Mancha Bottom" /> */}
         </Patrocinadores>
     );
 }

@@ -2,7 +2,13 @@ import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import { Hist, CarrosselStyles } from './styles.jsx'
 import imgCarrossel from '../../assets/images/equipe_carrossel.png'
+import reuniao from '../../assets/images/reuniao.png'
+import reuniao2 from '../../assets/images/reuniao2.png'
+import robo from '../../assets/images/robo.png'
 import img2 from '../../assets/images/robo_carrosel.svg'
+import geral from '../../assets/images/geral.jpg'
+import tres from '../../assets/images/vini luci mu.jpg'
+import andando from '../../assets/images/andando.jpg'
 import Title from '../Title/'
 import Paragraph from '../Paragraph/'
 
@@ -102,10 +108,17 @@ function History(){
     <Hist className="historia">
       <Title>HISTORIA</Title>
       <Carrossel>
+        <img src={robo} alt="time carrossel"/>
+        <img src={reuniao2} alt="time carrossel"/>
         <img src={imgCarrossel} alt="time carrossel"/>
-        <img src={imgCarrossel} alt="time carrossel"/>
-        <img src={imgCarrossel} alt="time carrossel"/>
-        <img src={img2} alt="time carrossel"/>
+        <img src={reuniao} alt="time carrossel"/>
+        <img src={reuniao} alt="time carrossel"/>
+        <img src={reuniao} alt="time carrossel"/>
+        <img src={reuniao} alt="time carrossel"/>
+        <img src={reuniao} alt="time carrossel"/>
+        <img src={andando} alt="time carrossel"/>
+        <img src={tres} alt="time carrossel"/>
+        <img src={geral} alt="time carrossel"/>
       </Carrossel>
       <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Paragraph>
     </Hist>

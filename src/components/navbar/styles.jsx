@@ -19,10 +19,11 @@ export const Nav = styled.nav`
   position: fixed;
   top:0;
   font-family: Advent Pro;
+  background-color: ${props => props.theme.darkBg};
   width: 100vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  padding: 0 20px;
+  padding: 0 90px;
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
     height: 70px;
@@ -35,7 +36,6 @@ export const Nav = styled.nav`
     background-color: ${props => props.theme.darkBg};
     z-index: 1000;
     width: 100%;
-    animation: ${fadeIn} 0.2s ease forwards;
   }
 `;
 
@@ -66,7 +66,7 @@ export const LogoImage = styled.div`
 `;
 
 export const LogoText = styled.span`
-  font-size: clamp(2.275rem, 3.375vw, 3.375vw);
+  font-size: clamp(2rem, 3vw, 3vw);
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
     font-size: clamp(5vw, 5vw, 5vw);

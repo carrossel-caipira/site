@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Title = styled.h1`
   font-family: "Bowlby One SC", sans-serif;
   font-size: 3.235rem;
-  color: ${props => props.theme.titleColor};
+  color: ${props => props.theme.darkBg};
   letter-spacing: 3px;
   line-height: 1.1;
 

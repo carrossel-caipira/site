@@ -7,12 +7,10 @@ export const CarrosselStyles = styled.div`
   align-items: center;
   width: 50vw;
   min-width: 600px;
-  height: 4.25em;
+  height: 5.50em;
   font-size: 4.235em;
   justify-content: center;
   gap: 10px;
-
-  background-color: ${props => props.theme.titleColor};
 
   mask-image: linear-gradient(to right, transparent, rgb(0 0 0 / 100%), transparent);
 
@@ -34,7 +32,7 @@ export const Hist = styled.section`
   margin-top: 12.5vh; /* aconta pela mancha_history */
 
   & ${Title} {
-    color: ${props => props.theme.titleColor2};
+    color: white;
     margin-bottom: ${props => props.theme.margin_l};
   }
 

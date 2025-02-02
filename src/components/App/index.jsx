@@ -7,8 +7,9 @@ import Hero from '../hero';
 import AboutUs from '../aboutUs';
 import Footer from '../footer';
 import Sponsors from '../sponsors';
-import Group from '../group';
 import History from '../history';
+import Objetivo from '../Objetivos/index.jsx';
+import Recrutamento from '../Recrutamento/index.jsx';
 import { Container, ManchaHistory } from './styles.jsx';
 import GlobalStyles from '../../assets/styles/global.jsx';
 import manchaHistory from '../../assets/images/mancha_history.svg'
@@ -24,9 +25,10 @@ function App() {
         <Container>
           <Hero />
           <AboutUs />
+          <Recrutamento />
           <History />
           <ManchaHistory src={manchaHistory} />
-          <Group />
+          <Objetivo />
           <Sponsors />
           <Footer />
         </Container>

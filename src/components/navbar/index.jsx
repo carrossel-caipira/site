@@ -52,9 +52,6 @@ function Navbar() {
         <NavLink to="hero" smooth={true} spy={true} offset={-70} duration={500}>
           Inicio
         </NavLink>
-        <NavLink to="group" smooth={true} spy={true} offset={-70} duration={500}>
-          Membros
-        </NavLink>
         <NavLink to="historia" smooth={true} spy={true} offset={-70} duration={500}>
           História
         </NavLink>
