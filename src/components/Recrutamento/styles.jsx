@@ -27,14 +27,14 @@ export const Rec = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: white;
-  color: ${props => props.theme.titleColor2};
+  background-color: ${props => props.theme.titleColor2};
+  color: white;
   font-size: 1rem;
-  font-family: Poppins;
+  font-family: ${props => props.theme.fontPop};
   font-weight: bold;
   border: none;
   padding: 12px 24px;
-  border-radius: 30px;
+  border-radius: 18px;
   cursor: pointer;
   transition: background 0.3s ease;
 

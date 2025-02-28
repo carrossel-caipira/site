@@ -28,6 +28,7 @@ export const Copy = styled.div`
   display: flex;
   color: white;
   justify-content: center;
+  text-align: center;
   align-items: center;
   font-family: ${(props) => props.theme.fontPop};
   font-size: 15px;

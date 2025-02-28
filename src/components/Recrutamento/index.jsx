@@ -2,6 +2,7 @@ import React from 'react';
 import { Rec, Button } from './styles';
 import SubTitle from '../SubTitle';
 
+
 function Recrutamento() {
   return (
     <Rec>

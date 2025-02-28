@@ -29,11 +29,18 @@ export const Section = styled.section`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
   width: 80%;
   max-width: 100vw;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    gap: 85px;
+    align-items: center;
+  }
 `;
+
 
 export const Card = styled.div`
   display: flex;
@@ -43,11 +50,17 @@ export const Card = styled.div`
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  min-height: 450px;
+  min-height: 460px;
+
+  @media (max-width: 800px) {
+    min-height: auto;
+    padding: 30px;
+  }
 
   & ${SubTitle} {
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: ${props => props.theme.margin_l};
+    height: .85em;
   }
 
   & ${Paragraph} {
@@ -56,6 +69,10 @@ export const Card = styled.div`
   }
 `;
 
+
 export const Icon = styled.img`
-  width: 30vh;
+  width: 25vh;
+  max-width: 80%;
+  height: auto;
 `;
+

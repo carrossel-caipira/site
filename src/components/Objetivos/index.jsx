@@ -10,8 +10,8 @@ import chipIcon from "../../assets/images/logo_carrossel.svg";
 
 const items = [
   { id: 1, title: "Cooperação", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", icon: coop },
-  { id: 2, title: "Competitividade", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", icon: researchIcon },
-  { id: 3, title: "Desenvolvimento", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", icon: chipIcon }
+  { id: 2, title: "Cooperação", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", icon: researchIcon },
+  { id: 3, title: "Cooperação", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", icon: chipIcon }
 ];
 
 function Objetivos() {

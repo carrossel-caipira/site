@@ -15,7 +15,7 @@ export const InfoCard = styled.div`
 
     & ${SubTitle} {
         margin-top: ${props => props.theme.margin_l};
-        margin-bottom: ${props => props.theme.margin_m};
+        margin-bottom: ${props => props.theme.margin_l};
         height: .85em;
     }
 

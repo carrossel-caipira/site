@@ -16,14 +16,13 @@ export const Nav = styled.nav`
   align-items: center;
   height: 92px;
   color: white;
-  position: fixed;
   top:0;
   font-family: Advent Pro;
   background-color: ${props => props.theme.darkBg};
   width: 100vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  padding: 0 90px;
+  padding: 0 clamp(2rem, 5vw, 5rem); ;
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
     height: 70px;
@@ -33,9 +32,8 @@ export const Nav = styled.nav`
     position: fixed;
     top: 0;
     left: 0;
-    background-color: ${props => props.theme.darkBg};
     z-index: 1000;
-    width: 100%;
+    width: 100vw;
   }
 `;
 
@@ -45,7 +43,7 @@ export const Logo = styled.div`
   gap: clamp(0.5rem, 1vw, 12px);
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
-    gap: clamp(0.2rem, 1vw, 8px);
+    gap: clamp(0.2rem, 1vw, 9px);
   }
 `;
 
@@ -56,7 +54,7 @@ export const LogoImage = styled.div`
     width: clamp(3rem, 4vw, 4vw);
 
     @media (max-width: ${props => props.theme.deviceMobile}) {
-      width: 8vw;
+      width: 8.3vw;
     }
   }
 
@@ -69,7 +67,7 @@ export const LogoText = styled.span`
   font-size: clamp(2rem, 3vw, 3vw);
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
-    font-size: clamp(5vw, 5vw, 5vw);
+    font-size: clamp(6,3vw, 50%, 3rem);
   }
 `;
 
@@ -78,7 +76,7 @@ export const LinkItems = styled.div`
   display: flex;
   align-items: center;
   gap: clamp(1rem, 3vw, 3.125vw);
-  font-size: clamp(1.3rem, 2vw, 1.6875rem);
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
     display: none;

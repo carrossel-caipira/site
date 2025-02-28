@@ -63,9 +63,6 @@ function Navbar() {
       <NavLink onClick={toggleMenu} to="hero" smooth={true} spy={true} offset={-70} duration={500}>
           Inicio
         </NavLink>
-        <NavLink onClick={toggleMenu} to="group" smooth={true} spy={true} offset={-70} duration={500}>
-          Membros
-        </NavLink>
         <NavLink onClick={toggleMenu} to="historia" smooth={true} spy={true} offset={-70} duration={500}>
           História
         </NavLink>
