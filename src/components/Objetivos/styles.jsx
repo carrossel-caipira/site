@@ -34,7 +34,7 @@ export const GridContainer = styled.div`
   width: 80%;
   max-width: 100vw;
 
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     grid-template-columns: 1fr;
     gap: 85px;
     align-items: center;
@@ -52,14 +52,14 @@ export const Card = styled.div`
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   min-height: 460px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     min-height: auto;
     padding: 30px;
   }
 
   & ${SubTitle} {
     color: white;
-    margin-bottom: ${props => props.theme.margin_l};
+    margin-bottom: ${props => props.theme.margin_xl};
     height: .85em;
   }
 
@@ -71,8 +71,9 @@ export const Card = styled.div`
 
 
 export const Icon = styled.img`
-  width: 25vh;
-  max-width: 80%;
+  margin-top: 5px;
+  width: 20vh;
+  max-width: 70%;
   height: auto;
 `;
 

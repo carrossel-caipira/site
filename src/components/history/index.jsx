@@ -2,6 +2,13 @@ import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import { Hist, CarrosselStyles } from './styles.jsx'
 import imgCarrossel from '../../assets/images/equipe_carrossel.png'
+import VC1 from '../../assets/images/visitaCalouros.jpg'
+import VC2 from '../../assets/images/visitaCalouros2.jpg'
+import VC3 from '../../assets/images/visitaCalouros3.jpg'
+import robos from '../../assets/images/robos.jpg'
+import robos2 from '../../assets/images/robos2.jpg'
+import roboBandeira from '../../assets/images/robo-bandeira.jpg'
+import trofeus from '../../assets/images/trofeus.jpg'
 import reuniao from '../../assets/images/reuniao.png'
 import reuniao2 from '../../assets/images/reuniao2.png'
 import robo from '../../assets/images/robo.png'
@@ -112,10 +119,13 @@ function History(){
         <img src={reuniao2} alt="time carrossel"/>
         <img src={imgCarrossel} alt="time carrossel"/>
         <img src={reuniao} alt="time carrossel"/>
-        <img src={reuniao} alt="time carrossel"/>
-        <img src={reuniao} alt="time carrossel"/>
-        <img src={reuniao} alt="time carrossel"/>
-        <img src={reuniao} alt="time carrossel"/>
+        <img src={trofeus} alt="trofeus do carrossel"/>
+        <img src={VC1} alt="Visita dos calouros 2025"/>
+        <img src={roboBandeira} alt="robo bandeira"/>
+        <img src={VC2} alt="Visita dos calouros 2025"/>
+        <img src={VC3} alt="Visita dos calouros 2025"/>
+        <img src={robos2} alt="robo vss"/>
+        <img src={robos} alt="robo vss"/>
         <img src={andando} alt="time carrossel"/>
         <img src={tres} alt="time carrossel"/>
         <img src={geral} alt="time carrossel"/>

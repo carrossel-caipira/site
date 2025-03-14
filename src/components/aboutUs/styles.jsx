@@ -45,7 +45,7 @@ export const About = styled.section`
     align-items: center;
 
     & ${Title} {
-        margin-bottom: ${props => props.theme.margin_xl}
+        margin-bottom: ${props => props.theme.margin_xl};
     }
 
     font-size: 4.235rem;
