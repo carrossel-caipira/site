@@ -34,7 +34,7 @@ export const GridContainer = styled.div`
   width: 80%;
   max-width: 100vw;
 
-  @media (max-width: 950px) {
+  @media (max-width: 980px) {
     grid-template-columns: 1fr;
     gap: 85px;
     align-items: center;
@@ -47,24 +47,25 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   background: ${(props) => props.theme.darkBg};
-  padding: 20px;
+  padding: 27px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   min-height: 460px;
 
-  @media (max-width: 950px) {
+  @media (max-width: 980px) {
     min-height: auto;
-    padding: 30px;
+    padding: 32px;
   }
 
   & ${SubTitle} {
     color: white;
-    margin-bottom: ${props => props.theme.margin_xl};
+    margin-bottom: ${props => props.theme.margin_l};
     height: .85em;
   }
 
   & ${Paragraph} {
     color: white;
+    text-align: left;
     margin-bottom: 30px;
   }
 `;

@@ -7,6 +7,7 @@ import VC2 from '../../assets/images/visitaCalouros2.jpg'
 import VC3 from '../../assets/images/visitaCalouros3.jpg'
 import robos from '../../assets/images/robos.jpg'
 import robos2 from '../../assets/images/robos2.jpg'
+import documento from '../../assets/images/documento-campeao.jpeg'
 import roboBandeira from '../../assets/images/robo-bandeira.jpg'
 import trofeus from '../../assets/images/trofeus.jpg'
 import reuniao from '../../assets/images/reuniao.png'
@@ -113,7 +114,7 @@ function Carrossel(props) {
 function History(){
   return (
     <Hist className="historia">
-      <Title>HISTORIA</Title>
+      <Title>SOBRE NÓS</Title>
       <Carrossel>
         <img src={robo} alt="time carrossel"/>
         <img src={reuniao2} alt="time carrossel"/>
@@ -124,13 +125,14 @@ function History(){
         <img src={roboBandeira} alt="robo bandeira"/>
         <img src={VC2} alt="Visita dos calouros 2025"/>
         <img src={VC3} alt="Visita dos calouros 2025"/>
+        <img src={documento} alt="Documento Carrossel Campeao 1998"/>
         <img src={robos2} alt="robo vss"/>
         <img src={robos} alt="robo vss"/>
         <img src={andando} alt="time carrossel"/>
         <img src={tres} alt="time carrossel"/>
         <img src={geral} alt="time carrossel"/>
       </Carrossel>
-      <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Paragraph>
+      <Paragraph> A equipe foi criada em 1997 pelo professor Renê Pegoraro com intuito de fomentar o ensino de róbotica aplicada nas faculdades, garantindo segundo lugar na competição mundial de Mirosot em 1998 na França. Mantido pelos professores e alunos da instuição desde então, a equipe continua o ensino, pesquisa e aplicação de Robótica e Inteligência Artificial na Unesp participando nas competições subsequentes. </Paragraph>
     </Hist>
   )
 }

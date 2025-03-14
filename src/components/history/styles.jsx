@@ -41,7 +41,7 @@ export const Hist = styled.section`
   }
 
   & ${Paragraph} {
-    width: 35em;
+    width: 70em;
     max-width: 80vw;
     text-align: center;
     color: white;
