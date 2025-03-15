@@ -10,7 +10,7 @@ export const Section = styled.section`
   align-items: center;
   min-height: 70vh;
   width: 100vw;
-  margin-top: 15vw;
+  margin-top: 12vw;
   background-color: white;
   padding: 60px 20px;
   text-align: center;

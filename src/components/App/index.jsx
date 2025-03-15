@@ -24,10 +24,10 @@ function App() {
         <ScrollBar />
         <Container>
           <Hero />
-          {/* <AboutUs /> */}
+          <AboutUs />
+          <Recrutamento />
           <History />
           <ManchaHistory src={manchaHistory} />
-          {/* <Recrutamento /> */}
           <Objetivo />
           <Sponsors />
           <Footer />
