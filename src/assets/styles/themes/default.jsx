@@ -1,10 +1,12 @@
+import background from "../../images/background2.png";
+
 export default {
-  darkBg: '#002653',
-  lightBg: '#FFFFFF',
-  titleColor: '#63B3D2',
-  titleColor2: '#52CC52',
-  subTitleColor: '#454545',
-  paragraphColor: '#6B6B6B',
+  darkBg: "#002653",
+  lightBg: "#FFFFFF",
+  titleColor: "#63B3D2",
+  titleColor2: "#52CC52",
+  subTitleColor: "#454545",
+  paragraphColor: "#6B6B6B",
   colorBgCopy: "#131313",
 
   // spacing
@@ -22,4 +24,6 @@ export default {
   // devices
   deviceMobile: "650px",
 
-}
+  // background image
+  backgroundImage: background, // Adicionando a imagem aqui
+};

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Title from "../Title/";
 import SubTitle from "../SubTitle";
 import Paragraph from "../Paragraph";
-import backzao from "../../assets/images/background.svg";
 
 export const Section = styled.section`
   display: flex;
@@ -17,7 +16,7 @@ export const Section = styled.section`
 
   & ${Title} {
     margin-bottom: 100px;
-    background-image: url(${backzao});
+    background-image: url(${(props) => props.theme.backgroundImage});
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;

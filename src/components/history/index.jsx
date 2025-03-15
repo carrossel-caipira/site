@@ -13,7 +13,6 @@ import trofeus from '../../assets/images/trofeus.jpg'
 import reuniao from '../../assets/images/reuniao.png'
 import reuniao2 from '../../assets/images/reuniao2.png'
 import robo from '../../assets/images/robo.png'
-import img2 from '../../assets/images/robo_carrosel.svg'
 import geral from '../../assets/images/geral.jpg'
 import tres from '../../assets/images/vini luci mu.jpg'
 import Title from '../Title/'
@@ -113,7 +112,7 @@ function Carrossel(props) {
 function History(){
   return (
     <Hist className="historia">
-      <Title>SOBRE NÓS</Title>
+      <Title>HISTÓRIA</Title>
       <Carrossel>
         <img src={robo} alt="time carrossel"/>
         <img src={reuniao2} alt="time carrossel"/>
@@ -124,9 +123,11 @@ function History(){
         <img src={VC1} alt="Visita dos calouros 2025"/>
         <img src={geral} alt="time carrossel"/>
         <img src={roboBandeira} alt="robo bandeira"/>
+        <img src={robos2} alt="robo vss"/>
         <img src={VC2} alt="Visita dos calouros 2025"/>
         <img src={VC3} alt="Visita dos calouros 2025"/>
         <img src={documento} alt="Documento Carrossel Campeao 1998"/>
+        <img src={robos2} alt="robo vss"/>
         <img src={robos2} alt="robo vss"/>
         <img src={robos} alt="robo vss"/>
         <img src={tres} alt="time carrossel"/>

@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import backzao from '../../assets/images/background.svg';
 import { Link } from 'react-scroll';
 
 export const HeroS = styled.div`
@@ -9,7 +8,7 @@ export const HeroS = styled.div`
   justify-content: space-between;
   min-height: 100vh;
   width: 100vw;
-  background-image: url(${backzao});
+  background-image: url(${(props) => props.theme.backgroundImage});
   background-size: cover;
   background-position: center;
   margin: 0;

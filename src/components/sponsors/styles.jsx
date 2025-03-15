@@ -16,7 +16,7 @@ export const Patrocinadores = styled.div`
 
   & ${Title} {
     // color: ${(props) => props.theme.darkBg};
-    background-image: url(${backzao});
+    background-image: url(${(props) => props.theme.backgroundImage});
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;

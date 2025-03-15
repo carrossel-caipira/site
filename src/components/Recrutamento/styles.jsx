@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import SubTitle from "../SubTitle";
-import backzao from '../../assets/images/background.svg';
 
 export const Rec = styled.div`
   display: flex;
@@ -10,7 +9,7 @@ export const Rec = styled.div`
   min-height: 40vh;
   width: 100vw;
   // background-color: ${(props) => props.theme.titleColor};
-  background-image: url(${backzao});
+  background-image: url(${(props) => props.theme.backgroundImage});
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -34,7 +33,7 @@ export const Button = styled.button`
   font-weight: bold;
   border: none;
   padding: 12px 24px;
-  border-radius: 25px;
+  border-radius: 28px;
   cursor: pointer;
   transition: background 0.3s ease;
 
