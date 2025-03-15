@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Title from "../Title";
-import backzao from "../../assets/images/hero_back.svg";
+import backzao from "../../assets/images/background.svg";
 
 export const Patrocinadores = styled.div`
   display: flex;

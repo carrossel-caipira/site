@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Title from "../Title/";
 import SubTitle from "../SubTitle";
 import Paragraph from "../Paragraph";
-import backzao from "../../assets/images/hero_back.svg";
+import backzao from "../../assets/images/background.svg";
 
 export const Section = styled.section`
   display: flex;

@@ -1,8 +1,7 @@
 import React from 'react'
-import ManchaB from '../../../src/assets/images/mancha_bot.svg'
-import ManchaT from '../../assets/images/mancha_top.svg'
 import Title from '../Title/'
 import Recogna from '../../assets/images/recogna.svg'
+import backzao from '../../assets/images/background.svg';
 import { Patrocinadores, StainTop, StainBottom, MainImage } from './styles.jsx';
 
 function Sponsors() {

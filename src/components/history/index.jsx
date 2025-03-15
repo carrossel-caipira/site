@@ -16,7 +16,6 @@ import robo from '../../assets/images/robo.png'
 import img2 from '../../assets/images/robo_carrosel.svg'
 import geral from '../../assets/images/geral.jpg'
 import tres from '../../assets/images/vini luci mu.jpg'
-import andando from '../../assets/images/andando.jpg'
 import Title from '../Title/'
 import Paragraph from '../Paragraph/'
 
@@ -118,17 +117,19 @@ function History(){
       <Carrossel>
         <img src={robo} alt="time carrossel"/>
         <img src={reuniao2} alt="time carrossel"/>
+        <img src={geral} alt="time carrossel"/>
         <img src={imgCarrossel} alt="time carrossel"/>
         <img src={reuniao} alt="time carrossel"/>
         <img src={trofeus} alt="trofeus do carrossel"/>
         <img src={VC1} alt="Visita dos calouros 2025"/>
+        <img src={geral} alt="time carrossel"/>
         <img src={roboBandeira} alt="robo bandeira"/>
         <img src={VC2} alt="Visita dos calouros 2025"/>
         <img src={VC3} alt="Visita dos calouros 2025"/>
         <img src={documento} alt="Documento Carrossel Campeao 1998"/>
         <img src={robos2} alt="robo vss"/>
         <img src={robos} alt="robo vss"/>
-        <img src={andando} alt="time carrossel"/>
+        <img src={tres} alt="time carrossel"/>
         <img src={tres} alt="time carrossel"/>
         <img src={geral} alt="time carrossel"/>
       </Carrossel>

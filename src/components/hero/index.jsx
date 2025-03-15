@@ -4,6 +4,7 @@ import Navbar from '../navbar/index.jsx';
 import imagem from '../../assets/images/robozin.png';
 import titulohero from '../../assets/images/titulo_hero.svg';
 import imgbutao from '../../assets/images/angles-down-solid.svg';
+import backzao from '../../assets/images/background.svg';
 
 
 function Hero() {

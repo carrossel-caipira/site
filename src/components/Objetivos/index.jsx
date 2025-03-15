@@ -7,6 +7,7 @@ import chipIcon from "../../assets/images/logo_carrossel.svg";
 import bonequinhos from "../../assets/images/work-team.svg";
 import comp from "../../assets/images/competitividade.svg";
 import learn_img from "../../assets/images/learn-img.svg";
+import backzao from '../../assets/images/background.svg';
 
 
 const items = [
@@ -17,7 +18,7 @@ const items = [
 
 function Objetivos() {
   return (
-    <Section>
+    <Section backgroundImage={backzao}>
       <Title>Nossos Pilares</Title>
       <GridContainer>
         {items.map(item => (

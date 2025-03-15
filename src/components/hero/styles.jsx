@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import backzao from '../../assets/images/hero_back.svg';
+import backzao from '../../assets/images/background.svg';
 import { Link } from 'react-scroll';
 
 export const HeroS = styled.div`
