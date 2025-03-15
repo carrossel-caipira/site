@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HeroS, RobotImg, DivMeio, Texto, Botaoimg, Linkz } from './styles';
-import Navbar from '../navbar/index';
+import Navbar from '../navbar/index.jsx';
 import imagem from '../../assets/images/robozin.png';
 import titulohero from '../../assets/images/titulo_hero.svg';
 import imgbutao from '../../assets/images/angles-down-solid.svg';

@@ -1,9 +1,8 @@
 {
   "name": "carrossel-caipira",
-  "private": true,
+  "homepage": "https://carrossel-caipira.github.io/site/",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://carrossel-caipira.github.io/site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
