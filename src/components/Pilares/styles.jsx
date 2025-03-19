@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Title from "../Title/";
+import Title from "../Title";
 import SubTitle from "../SubTitle";
 import Paragraph from "../Paragraph";
 
@@ -16,13 +16,7 @@ export const Section = styled.section`
 
   & ${Title} {
     margin-bottom: 100px;
-    background-image: url(${(props) => props.theme.backgroundImage});
-    background-size: cover;
-    background-position: center;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-
+    color: black;
   }
 `;
 

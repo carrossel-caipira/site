@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Title = styled.h1`
-  font-family: "Bowlby One SC", sans-serif;
+  font-family: ${(props => props.theme.fontPopSemiBold)}
   font-size: 3.235rem;
   color: ${props => props.theme.darkBg};
   letter-spacing: 3px;

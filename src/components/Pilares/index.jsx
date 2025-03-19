@@ -1,7 +1,7 @@
 import React from "react";
 import { Section, GridContainer, Card, Icon} from "./styles";
 import Paragraph from "../Paragraph"
-import Title from "../Title/"
+import Title from "../Title"
 import SubTitle from "../SubTitle"
 import chipIcon from "../../assets/images/logo_carrossel.svg";
 import bonequinhos from "../../assets/images/work-team.svg";

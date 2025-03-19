@@ -30,31 +30,6 @@ export const Patrocinadores = styled.div`
     padding: 20px;
   }
 `;
-
-export const StainTop = styled.img`
-  position: relative;
-  left: 52.5vw;
-  transform: translateY(55%);
-  width: 40vw;
-  margin-top: -25vw;
-  background-size: contain;
-  z-index: -1;
-
-  @media (max-width: ${(props) => props.theme.deviceMobile}) {
-    left: 60vw;
-  }
-`;
-
-export const StainBottom = styled.img`
-  position: relative;
-  left: -50vw;
-  width: 30vw;
-  bottom: 2vw;
-  max-width: 600px;
-  z-index: -1;
-  // margin-bottom: calc(-30vw - 11.08723rem/2);
-`;
-
 export const MainImage = styled.img`
   width: 40vw;
   min-width: 450px;

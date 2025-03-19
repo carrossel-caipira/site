@@ -26,7 +26,7 @@ export const Rec = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: ${props => props.theme.titleColor2};
+  background-color: ${props => props.theme.titleColor};
   color: white;
   font-size: 1rem;
   font-family: ${props => props.theme.fontPop};

@@ -1,10 +1,9 @@
-import background from "../../images/background2.png";
+import background from "../../images/background2.png"; //adicionar nova imagem de background
 
 export default {
   darkBg: "#002653",
   lightBg: "#FFFFFF",
   titleColor: "#63B3D2",
-  titleColor2: "#52CC52",
   subTitleColor: "#454545",
   paragraphColor: "#6B6B6B",
   colorBgCopy: "#131313",
@@ -19,7 +18,7 @@ export default {
 
   // fonts
   fontPop: "Poppins",
-  fontBow: "Bowlby One Sc",
+  fontPopSemiBold: "Poppins-Semi-Bold",
 
   // devices
   deviceMobile: "650px",
