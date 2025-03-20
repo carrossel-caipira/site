@@ -13,6 +13,7 @@ export const Section = styled.section`
   padding-right:50px;
   padding-left:45px;
   text-align: center;
+  margin-top:100px;
 
   & ${Title} {
     color: ${(props) => props.theme.darkBg};
@@ -23,8 +24,8 @@ export const Section = styled.section`
     @media (max-width: 550px) {
     font-size: 5.8rem;
     }
-
 }
+
 
 `;
 
@@ -37,14 +38,14 @@ export const GridContainer = styled.div`
   width: 100%;
   max-width: 100vw;
 
-  @media (max-width: 1250px) {
+  @media (max-width: 980px) {
     grid-template-columns: 1fr;
     gap: 85px;
     align-items: center;
   }
 
   @media (max-width: 425px) {
-    margin-right:9px;
+    margin-right:30px;
   }
 `;
 
@@ -69,12 +70,6 @@ export const Card = styled.div`
     height: 0.85em;
     text-align: center;
     letter-spacing: 1px;
-
-
-
-    @media (max-width: 1040px) {
-    font-size: 2.8rem;
-  }
   }
 `;
 export const HeaderBox = styled.div`

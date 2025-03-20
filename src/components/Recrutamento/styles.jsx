@@ -22,8 +22,17 @@ export const Rec = styled.div`
     text-align: center;
     margin-bottom: 20px;
 
-    @media (max-width: 480px) {
-    font-size: 1.6rem;
+
+    @media (max-width: 1800px) {
+    font-size: 3.25rem;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 2.8rem;
+  }
+
+    @media (max-width: 550px) {
+    font-size: 1.9rem;
   }
 
   @media (max-width: 360px) {
