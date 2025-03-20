@@ -9,6 +9,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   touch-action: pan-x pan-y;
+  overflow-x: hidden;
 
   & > * {
     margin-bottom: ${pagesMargin};

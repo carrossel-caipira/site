@@ -9,8 +9,6 @@ export const Patrocinadores = styled.div`
   width: 100vw;
   background-color: ${(props) => props.theme.lightBg};
   position: relative;
-  z-index: -2;
-  margin-top: 15px;
 
 
   & ${Title} {
@@ -25,9 +23,9 @@ export const Patrocinadores = styled.div`
 `;
 export const MainImage = styled.img`
   width: 40vw;
-  min-width: 450px;
+  min-width: 400px;
 
   @media (max-width: ${(props) => props.theme.deviceMobile}) {
-    width: 70vw;
+    width: 100vw;
   }
 `;

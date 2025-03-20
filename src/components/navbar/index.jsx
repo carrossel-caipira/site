@@ -6,15 +6,15 @@ import { Nav, Logo, LogoText, LogoImage, LinkItems, NavLink, Hamburger, MobileMe
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 650);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1025);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const handleResize = useCallback(() => {
-    setIsMobile(window.innerWidth < 650);
-    if (window.innerWidth >= 650) {
+    setIsMobile(window.innerWidth < 1025);
+    if (window.innerWidth >= 1025) {
       setIsOpen(false);
     }
   }, []);

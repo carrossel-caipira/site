@@ -21,6 +21,15 @@ export const Rec = styled.div`
     color: white;
     text-align: center;
     margin-bottom: 20px;
+
+    @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.6rem;
+  }
+
   }
 `;
 

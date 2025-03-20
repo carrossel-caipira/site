@@ -6,7 +6,7 @@ export default {
   lightBg: "#FFFFFF",
   buttonColor: "#a047cc",
   subTitleColor: "#454545",
-  paragraphColor: "#6B6B6B",
+  paragraphColor: "#5c7494",
   colorBgCopy: "#131313",
 
   // spacing

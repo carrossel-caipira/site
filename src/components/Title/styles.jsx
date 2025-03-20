@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Title = styled.h1`
   font-family: Poppins;
-  font-size: 3.8rem;
+  font-size: 4.5rem;
   color: ${props => props.theme.darkBg};
   letter-spacing: 3px;
   line-height: 1.1;

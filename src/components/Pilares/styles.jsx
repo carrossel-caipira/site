@@ -9,31 +9,42 @@ export const Section = styled.section`
   align-items: center;
   min-height: 70vh;
   width: 100vw;
-  margin-top: 12vw;
   background-color: white;
-  padding: 60px 20px;
+  padding-right:50px;
+  padding-left:45px;
   text-align: center;
 
   & ${Title} {
-    color: ${props => props.theme.darkBg};
+    color: ${(props) => props.theme.darkBg};
     font-weight: 800;
     letter-spacing: 0.1px;
     font-size: 8rem;
-    margin-bottom: 0px;
+
+    @media (max-width: 550px) {
+    font-size: 5.8rem;
+    }
+
+}
+
 `;
 
 export const GridContainer = styled.div`
   margin-top: -30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  width: 75%;
+
+  gap: 55px;
+  width: 100%;
   max-width: 100vw;
 
-  @media (max-width: 980px) {
+  @media (max-width: 1250px) {
     grid-template-columns: 1fr;
     gap: 85px;
     align-items: center;
+  }
+
+  @media (max-width: 425px) {
+    margin-right:9px;
   }
 `;
 
@@ -53,42 +64,44 @@ export const Card = styled.div`
   }
 
   & ${SubTitle} {
+
     color: white;
-    margin-bottom: ${props => props.theme.margin_l};
-    height: .85em;
+    height: 0.85em;
     text-align: center;
     letter-spacing: 1px;
+
+
+
+    @media (max-width: 1040px) {
+    font-size: 2.8rem;
   }
-
-
+  }
 `;
 export const HeaderBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: -23px;
-
 `;
 
 export const Box = styled.div`
-    background-color: white;
-  width: 90%;
+  background-color: white;
+  width: auto;
   padding: 20px;
   border-radius: 35px;
   display: flex;
+  margin-top: 1.19em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 250px;
 
   & ${Paragraph} {
-    color: ${(props) => props.theme.darkBg};
+
     text-align: left;
     margin: 0;
   }
 `;
-
 
 export const Icon = styled.img`
   margin-top: 16px;
