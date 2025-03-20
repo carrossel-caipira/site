@@ -38,7 +38,8 @@ export const GridContainer = styled.div`
   width: 100%;
   max-width: 100vw;
 
-  @media (max-width: 980px) {
+
+  @media (max-width: 1184px) {
     grid-template-columns: 1fr;
     gap: 85px;
     align-items: center;
@@ -103,4 +104,49 @@ export const Icon = styled.img`
   width: 20vh;
   max-width: 70%;
   height: auto;
+
+  @media (max-width: 1800px) {
+    font-size: 2.8rem;
+  }
+
+  @media (max-width: 1600px) {
+    font-size: 2.4rem;
+  }
+
+  @media (max-width: 1570px) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: 1400px) {
+    font-size: 2.1rem;
+  }
+
+  @media (max-width: 1250px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 1184px) {
+    font-size: 3,25rem;
+  }
+
+  @media (max-width: 750px) {
+    font-size: 2.8rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 2.4rem;
+  }
+
+  @media (max-width: 520px) {
+    font-size: 2rem;
+  }
+
+
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.8rem;
+  }
 `;
