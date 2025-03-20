@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const Title = styled.h1`
-  font-family: ${(props => props.theme.fontPopSemiBold)}
-  font-size: 3.235rem;
+  font-family: Poppins;
+  font-size: 3.8rem;
   color: ${props => props.theme.darkBg};
   letter-spacing: 3px;
   line-height: 1.1;

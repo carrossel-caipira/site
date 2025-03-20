@@ -3,10 +3,10 @@ import { Link } from 'react-scroll';
 
 const fadeIn = keyframes`
   from {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 1);
   }
   to {
-    background-color: ${props => props.theme.darkBg};
+    background-color: rgba(255, 255, 255, 0.7);
   }
 `;
 
@@ -14,18 +14,22 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 92px;
+  height: 105px;
   color: white;
-  top:0;
+  top: 0;
   font-family: Advent Pro;
-  background-color: ${props => props.theme.darkBg};
+  font-weight: 600;
+  color: ${props => props.theme.darkBg};
+  background-color: ${props => props.theme.lightBg};
   width: 100vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  padding: 0 clamp(2rem, 5vw, 5rem); ;
+  padding: 0 80px;
+  transition: background-color 0.3s ease;
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
     height: 70px;
+    padding: 0 10px;
   }
 
   &.sticky {
@@ -34,16 +38,17 @@ export const Nav = styled.nav`
     left: 0;
     z-index: 1000;
     width: 100vw;
+    animation: ${fadeIn} 0.5s ease forwards;
   }
 `;
 
 export const Logo = styled.div`
   display: flex;
   align-items: center;
-  gap: clamp(0.5rem, 1vw, 12px);
+  gap: 1rem;
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
-    gap: clamp(0.2rem, 1vw, 9px);
+    gap: 0.5rem;
   }
 `;
 
@@ -51,10 +56,10 @@ export const LogoImage = styled.div`
   transition: transform 0.7s ease;
 
   img {
-    width: clamp(3rem, 4vw, 4vw);
+    width: 4.6rem;
 
     @media (max-width: ${props => props.theme.deviceMobile}) {
-      width: 8.3vw;
+      width: 3rem;
     }
   }
 
@@ -64,48 +69,63 @@ export const LogoImage = styled.div`
 `;
 
 export const LogoText = styled.span`
-  font-size: clamp(2rem, 3vw, 3vw);
+  font-size: 3rem;
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
-    font-size: clamp(6,3vw, 50%, 3rem);
+    font-size: 2rem;
   }
 `;
-
 
 export const LinkItems = styled.div`
   display: flex;
   align-items: center;
-  gap: clamp(1rem, 3vw, 3.125vw);
-  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  gap: 7vw;
+  font-size: 2rem;
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
     display: none;
   }
-`;
 
+  @media (max-width: 1024px) {
+    font-size: 1.950rem;
+  }
+`;
 
 export const NavLink = styled(Link)`
   cursor: pointer;
   transition: font-size 0.2s ease;
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25);
 
-  @media (max-width: ${props => props.theme.deviceMobile}) {
-    font-size: 2.5vw;
+  &:hover {
+    font-size: 1.75rem;
+    border-bottom: 2px solid white;
   }
 
-  &:hover {
-    font-size: clamp(1.2rem, 2vw, 1.75rem);
-    border-bottom: 2px solid white;
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+
+    &:hover {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: ${props => props.theme.deviceMobile}) {
+    font-size: 1.2rem;
+
+    &:hover {
+      font-size: 1.3rem;
+    }
   }
 `;
 
 export const Hamburger = styled.div`
   display: none;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 2rem;
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
     display: block;
+    font-size: 1.2rem;
   }
 `;
 
@@ -116,16 +136,15 @@ export const MobileMenu = styled.div`
   position: absolute;
   top: 70px;
   right: 0;
+  color: ${props => props.theme.darkBg};
   width: 60%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: ${props => props.theme.darkBg};
-  /*background-color: rgba(0, 0, 0, 0.7);*/
-  //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: ${props => props.theme.lightBg};
   padding: 20px;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  gap: 20px;
-  font-size: 20px;
+  gap: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   transition: transform 0.3s ease-in-out;
 
@@ -137,13 +156,23 @@ export const MobileMenu = styled.div`
   @media (max-width: ${props => props.theme.deviceMobile}) {
     display: flex;
     transform: translateX(${({ isOpen }) => (isOpen ? '0' : '100%')});
+    gap: 0.8rem;
+    font-size: 1rem;
   }
 
   ${NavLink} {
-    font-size: 20px;
+    font-size: 1.2rem;
 
     &:hover {
-      font-size: 22px;
+      font-size: 1.3rem;
+    }
+
+    @media (max-width: ${props => props.theme.deviceMobile}) {
+      font-size: 1rem;
+
+      &:hover {
+        font-size: 1.1rem;
+      }
     }
   }
 `;

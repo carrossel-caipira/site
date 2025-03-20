@@ -10,6 +10,7 @@
     "openmobile": "node ./node_modules/openmobile/ip.js"
   },
   "dependencies": {
+    "@fontsource/poppins": "^5.2.5",
     "firebase": "^11.4.0",
     "primereact": "^10.9.2",
     "react": "^18.2.0",

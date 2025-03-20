@@ -1,9 +1,10 @@
 import background from "../../images/background2.png"; //adicionar nova imagem de background
+import '@fontsource/poppins/600.css'
 
 export default {
   darkBg: "#002653",
   lightBg: "#FFFFFF",
-  titleColor: "#63B3D2",
+  buttonColor: "#a047cc",
   subTitleColor: "#454545",
   paragraphColor: "#6B6B6B",
   colorBgCopy: "#131313",

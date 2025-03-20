@@ -8,7 +8,7 @@ export const Rec = styled.div`
   justify-content: center;
   min-height: 40vh;
   width: 100vw;
-  // background-color: ${(props) => props.theme.titleColor};
+  background-color: ${(props) => props.theme.titleColor};
   background-image: url(${(props) => props.theme.backgroundImage});
   background-size: cover;
   background-position: center;
@@ -19,14 +19,13 @@ export const Rec = styled.div`
 
   & ${SubTitle} {
     color: white;
-    font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
   }
 `;
 
 export const Button = styled.button`
-  background-color: ${props => props.theme.titleColor};
+  background-color: ${props => props.theme.buttonColor};
   color: white;
   font-size: 1rem;
   font-family: ${props => props.theme.fontPop};

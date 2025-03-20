@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Title from "../Title";
-import backzao from "../../assets/images/background.svg";
 
 export const Patrocinadores = styled.div`
   display: flex;
@@ -15,13 +14,7 @@ export const Patrocinadores = styled.div`
 
 
   & ${Title} {
-    // color: ${(props) => props.theme.darkBg};
-    background-image: url(${(props) => props.theme.backgroundImage});
-    background-size: cover;
-    background-position: center;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: ${(props) => props.theme.buttonColor};
     margin-bottom: ${(props) => props.theme.margin_l};
   }
 
