@@ -5,47 +5,25 @@ import Title from '../Title';
 import Navbar from '../navbar';
 import Sponsors from '../sponsors';
 import Objetivo from '../Pilares/index.jsx';
+import Sobre from '../Sobre-nos/index.jsx'
 import Recrutamento from '../Recrutamento/index.jsx';
 import { Container } from './styles.jsx';
 import GlobalStyles from '../../assets/styles/global.jsx';
-import ScrollBar from '../ScrollBar/';
+import Footer from '../footer/index.jsx'
 
 function App() {
-  useEffect(() => {
-
-    const handleWheel = (event) => {
-      if (event.ctrlKey) {
-        event.preventDefault();
-      }
-    };
-
-
-    const handleKeyDown = (event) => {
-      if (event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '=')) {
-        event.preventDefault();
-      }
-    };
-
-
-    document.addEventListener('wheel', handleWheel, { passive: false });
-    document.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      document.removeEventListener('wheel', handleWheel);
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
 
   return (
     <>
       <ThemeProvider theme={Theme}>
         <GlobalStyles />
-        <ScrollBar />
         <Container>
           <Navbar/>
           <Recrutamento />
+          <Sobre/>
           <Objetivo />
           <Sponsors />
+          <Footer />
         </Container>
       </ThemeProvider>
     </>

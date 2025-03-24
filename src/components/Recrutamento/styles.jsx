@@ -12,10 +12,9 @@ export const Rec = styled.div`
   background-image: url(${(props) => props.theme.backgroundImage});
   background-size: cover;
   background-position: center;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  margin-bottom: ${props => props.theme.margin_sections};
 
   & ${SubTitle} {
     color: white;

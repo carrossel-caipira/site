@@ -11,9 +11,10 @@ export const Section = styled.section`
   width: 100vw;
   background-color: white;
   padding-right:50px;
-  padding-left:45px;
+  padding-left:50px;
   text-align: center;
-  margin-top:100px;
+  Margin-top: 0px;
+
 
   & ${Title} {
     color: ${(props) => props.theme.darkBg};
@@ -34,8 +35,8 @@ export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
-  gap: 55px;
-  width: 100%;
+  gap: 60px;
+  width: 88%;
   max-width: 100vw;
 
 
@@ -45,8 +46,8 @@ export const GridContainer = styled.div`
     align-items: center;
   }
 
-  @media (max-width: 425px) {
-    margin-right:30px;
+  @media (max-width: 500px) {
+    margin-right:35px;
   }
 `;
 
@@ -90,10 +91,10 @@ export const Box = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 250px;
+  min-height: 19.5em;
 
   & ${Paragraph} {
-
+  font-size: 1.4rem;
     text-align: left;
     margin: 0;
   }

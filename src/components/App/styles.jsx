@@ -11,9 +11,9 @@ export const Container = styled.div`
   touch-action: pan-x pan-y;
   overflow-x: hidden;
 
-  & > * {
-    margin-bottom: ${pagesMargin};
-  }
+  // & > * {
+  //   margin-bottom: ${pagesMargin};
+  // }
 `;
 
 

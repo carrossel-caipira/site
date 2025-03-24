@@ -20,7 +20,7 @@ export const Nav = styled.nav`
   font-family: Advent Pro;
   font-weight: 600;
   color: ${props => props.theme.darkBg};
-  background-color: ${props => props.theme.lightBg};
+  background-color: #b8bccc;
   width: 100vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -93,28 +93,16 @@ export const LinkItems = styled.div`
 
 export const NavLink = styled(Link)`
   cursor: pointer;
-  transition: font-size 0.2s ease;
-  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25);
 
-  &:hover {
-    font-size: 1.75rem;
-    border-bottom: 2px solid white;
-  }
 
   @media (max-width: 1024px) {
     font-size: 1.5rem;
 
-    &:hover {
-      font-size: 1.6rem;
-    }
   }
 
   @media (max-width: ${props => props.theme.deviceMobile}) {
     font-size: 1.2rem;
 
-    &:hover {
-      font-size: 1.3rem;
-    }
   }
 `;
 
@@ -175,16 +163,8 @@ export const MobileMenu = styled.div`
   ${NavLink} {
     font-size: 1.2rem;
 
-    &:hover {
-      font-size: 1.3rem;
-    }
-
     @media (max-width: 1025px) {
       font-size: 1rem;
-
-      &:hover {
-        font-size: 1.1rem;
-      }
     }
   }
 `;

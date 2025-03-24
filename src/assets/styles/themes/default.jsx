@@ -6,7 +6,8 @@ export default {
   lightBg: "#FFFFFF",
   buttonColor: "#a047cc",
   subTitleColor: "#454545",
-  paragraphColor: "#5c7494",
+  paragraphColor: "#546e8b",
+
   colorBgCopy: "#131313",
 
   // spacing
@@ -16,6 +17,7 @@ export default {
   margin_l: "1em",
   margin_xl: "1.618em",
   margin_xxl: "2.618em",
+  margin_sections: "16.7em",
 
   // fonts
   fontPop: "Poppins",
