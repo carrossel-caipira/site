@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { Link } from 'react-scroll';
+import styled, { keyframes } from "styled-components";
+import { Link } from "react-scroll";
 
 const fadeIn = keyframes`
   from {
@@ -19,17 +19,18 @@ export const Nav = styled.nav`
   top: 0;
   font-family: Advent Pro;
   font-weight: 600;
-  color: ${props => props.theme.darkBg};
-  background-color: #b8bccc;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: ${(props) => props.theme.darkBg};
+
   width: 100vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   padding: 0 80px;
   transition: background-color 0.3s ease;
 
-  @media (max-width: ${props => props.theme.deviceMobile}) {
+  @media (max-width: ${(props) => props.theme.deviceMobile}) {
     height: 70px;
-    padding: 0 40px;
+    padding: 0 35px;
   }
 
   &.sticky {
@@ -46,8 +47,11 @@ export const Logo = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-grow: 1;
+  height: 100%
 
-  @media (max-width: ${props => props.theme.deviceMobile}) {
+
+  @media (max-width: ${(props) => props.theme.deviceMobile}) {
     gap: 0.5rem;
   }
 `;
@@ -58,8 +62,12 @@ export const LogoImage = styled.div`
   img {
     width: 4.6rem;
 
-    @media (max-width: ${props => props.theme.deviceMobile}) {
+    @media (max-width: ${(props) => props.theme.deviceMobile}) {
       width: 3rem;
+    }
+
+    @media (max-width: ${(props) => props.theme.deviceMobile}) {
+      width: 2.3rem;
     }
   }
 
@@ -69,10 +77,25 @@ export const LogoImage = styled.div`
 `;
 
 export const LogoText = styled.span`
-  font-size: 3rem;
+  // font-size: 3rem;
 
-  @media (max-width: ${props => props.theme.deviceMobile}) {
-    font-size: 2rem;
+  // @media (max-width: ${(props) => props.theme.deviceMobile}) {
+  //   font-size: 2rem;
+  // }
+
+  font-size: 2.16rem;
+  font-weight: 600;
+
+  @media (max-width: 1024px) {
+    font-size: 2.05rem;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 1.6rem;
+  }
+
+   @media (max-width: 380px) {
+    font-size: 1.3rem;
   }
 `;
 
@@ -87,22 +110,19 @@ export const LinkItems = styled.div`
   }
 
   @media (max-width: 1024px) {
-    font-size: 1.950rem;
+    font-size: 1.95rem;
   }
 `;
 
 export const NavLink = styled(Link)`
   cursor: pointer;
 
-
   @media (max-width: 1024px) {
     font-size: 1.5rem;
-
   }
 
-  @media (max-width: ${props => props.theme.deviceMobile}) {
+  @media (max-width: ${(props) => props.theme.deviceMobile}) {
     font-size: 1.2rem;
-
   }
 `;
 
@@ -111,15 +131,22 @@ export const Hamburger = styled.div`
   cursor: pointer;
   font-size: 3rem;
 
+
   @media (max-width: 1025px) {
     display: block;
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: -15px;
   }
 
   @media (max-width: 650px) {
     display: block;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    margin-bottom: -11px;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 1.2rem;
+    margin-bottom: -8px;
   }
 `;
 
@@ -129,32 +156,34 @@ export const MobileMenu = styled.div`
   align-items: center;
   position: absolute;
   @media (max-width: 1025px) {
-  top: 108px;
-  right: 0;
-  color: ${props => props.theme.darkBg};
-  width: 60%;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 20px;
-  gap: 1rem;
-  font-size: 2rem;
-  text-transform: uppercase;
-  transition: transform 0.3s ease-in-out;
+    top: 108px;
+    right: 0;
+    color: ${(props) => props.theme.darkBg};
+    width: 60%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    gap: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
   }
 
-  @media (max-width: 650px){
-    top:70px;
+  @media (max-width: 650px) {
+    top: 70px;
   }
 
-  ${({ isOpen }) => isOpen && `
+  ${({ isOpen }) =>
+    isOpen &&
+    `
     display: flex;
     transform: translateX(0);
   `}
 
   @media (max-width: 1025px) {
     display: flex;
-    transform: translateX(${({ isOpen }) => (isOpen ? '0' : '100%')});
+    transform: translateX(${({ isOpen }) => (isOpen ? "0" : "100%")});
     gap: 0.8rem;
     font-size: 1rem;
   }

@@ -35,7 +35,7 @@ export const Section = styled.section`
     }
     @media (max-width: 380px) {
 
-    font-size: 4.7rem;
+    font-size: 4.5rem;
 
     }
 }
@@ -85,6 +85,43 @@ export const Card = styled.div`
     height: 0.85em;
     text-align: center;
     letter-spacing: 1px;
+
+  @media (max-width: 1780px) {
+    font-size: 3rem;
+  }
+
+
+  @media (max-width: 1680px) {
+    font-size: 2.7rem;
+  }
+
+  @media (max-width: 1500px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 1430px) {
+    font-size: 2.3rem;
+  }
+
+  @media (min-width: 1185px) and (max-width: 1310px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 750px) and (max-width: 1184px) {
+    font-size: 4rem;
+  }
+
+  @media (min-width: 550px) and (max-width: 750px) {
+    font-size: 3.3rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 1.8rem;
+  }
   }
 `;
 export const HeaderBox = styled.div`
