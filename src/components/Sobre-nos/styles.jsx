@@ -13,7 +13,7 @@ export const Hist = styled.div`
   gap: 70px;
   padding: 0 6.25em;
   margin-bottom: ${(props) => props.theme.margin_sections};
-  @media (max-width: 1250px) {
+  @media (max-width: 1350px) {
     flex-direction: column;
     text-align: center;
   }
@@ -26,7 +26,7 @@ export const Right = styled.div`
 
   img {
     // width: 46.875em; /* Exemplo */
-      width: 700px;
+    width: 700px;
     height: auto;
   }
 `;
@@ -45,27 +45,69 @@ export const TitleR = styled.div`
     font-size: 10rem;
     font-weight: 600;
     color: #a04ccc;
+
+    @media (max-width: 650px) {
+
+    font-size: 7.8rem;
+
+    }
+
+    @media (max-width: 450px) {
+
+    font-size: 6.8rem;
+
+    }
+    @media (max-width: 380px) {
+
+    font-size: 5.7rem;
+
+    }
   }
 `;
 
 export const Text = styled.div`
   width: 100%;
 
+  & ${Paragraph} {
+    font-size: 1.6rem;
+    text-align: left;
 
-  & ${Paragraph}{
-  font-size: 1.6rem;
-  text-align: left;
+    @media (max-width: 600px) {
+
+    font-size: 1.3rem;
+
+    }
+
+    @media (max-width: 380px) {
+
+    font-size: 1.1rem;
+
+    }
+
   }
 
-  & ${SubTitle}{
+  & ${SubTitle} {
     color: ${(props) => props.theme.darkBg};
 
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 
-      @media (max-width: 2685px) {
-    font-size: 2.8rem;
+    @media (max-width: 2685px) {
+      font-size: 2.8rem;
+    }
+
+    @media (max-width: 500px) {
+
+    font-size: 2.3rem;
+
+    }
+
+
+    @media (max-width: 380px) {
+
+    font-size: 1.8rem;
+
+    }
   }
-
 `;
 
 //CARROSSEL VERTICAL

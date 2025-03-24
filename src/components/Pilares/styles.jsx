@@ -14,7 +14,7 @@ export const Section = styled.section`
   padding-left:50px;
   text-align: center;
   Margin-top: 0px;
-
+  margin-bottom: ${(props) => props.theme.margin_sections};
 
   & ${Title} {
     color: ${(props) => props.theme.darkBg};
@@ -22,8 +22,21 @@ export const Section = styled.section`
     letter-spacing: 0.1px;
     font-size: 8rem;
 
-    @media (max-width: 550px) {
+    @media (max-width: 650px) {
+
+    font-size: 7rem;
+
+    }
+
+    @media (max-width: 500px) {
+
     font-size: 5.8rem;
+
+    }
+    @media (max-width: 380px) {
+
+    font-size: 4.7rem;
+
     }
 }
 
@@ -36,7 +49,7 @@ export const GridContainer = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
   gap: 60px;
-  width: 88%;
+  width: calc(100% - 100px)
   max-width: 100vw;
 
 
@@ -47,7 +60,7 @@ export const GridContainer = styled.div`
   }
 
   @media (max-width: 500px) {
-    margin-right:35px;
+    // margin-right:35px;
   }
 `;
 

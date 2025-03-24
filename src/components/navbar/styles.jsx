@@ -135,9 +135,8 @@ export const MobileMenu = styled.div`
   width: 60%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: ${props => props.theme.lightBg};
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   gap: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
@@ -161,10 +160,10 @@ export const MobileMenu = styled.div`
   }
 
   ${NavLink} {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 
     @media (max-width: 1025px) {
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
   }
 `;
