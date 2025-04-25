@@ -1,34 +1,164 @@
 import styled from "styled-components";
-import Paragraph from "../Paragraph"
-
+import Paragraph from "../Paragraph";
 export const Background = styled.div`
-  position: relative;
+  display: grid;
   width: 100%;
-  min-height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 0px;
-  background-color: ${props => props.theme.darkBg};
+  min-height: 49vh;
+  grid-template-areas:
+    "texto"
+    "copy";
+  background-color: ${(props) => props.theme.darkBg};
+  margin-bottom: 0 !important;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  font-family: Poppins;
+`;
+
+export const TextFooter = styled.div`
+  grid-area: texto;
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  min-height: 49vh;
+  font-family: ${(props) => props.theme.fontBow};
 `;
 
 export const Copy = styled.div`
-  position: absolute;
-  bottom: 0;
+  grid-area: copy;
   width: 100%;
   height: 50px;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  text-align: center;
 
-  ${Paragraph}{
-      color: ${props => props.theme.darkBg};
-      font-size: 1rem;
+  ${Paragraph} {
+    color: ${(props) => props.theme.darkBg};
+    font-size: 1rem;
+    margin: 0;
+    max-width: 90%;
+    word-break: break-word;
+
+    @media (max-width: 500px){
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 450px){
+      font-size: 0.75rem;
+    }
   }
 `;
-export const Content = styled.div``;
 
-export const BackgroundImage = styled.div``;
+export const Where = styled.div`
+  margin-left: 5%;
+  margin-top: 2.2rem;
+  width: 500px;
+  background-color: transparent;
+  z-index: -1;
+`;
+
+export const Contact = styled.div`
+  margin-left: 5%;
+  margin-top: 1.2rem;
+  background-color: transparent;
+  margin-bottom: 3vh;
+  z-index: -1;
+`;
+
+export const TittleFooter = styled.div`
+  color: white;
+  font-size: 1.65rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+`;
+
+export const Info = styled.div`
+  width: 65%;
+  font-family: ${(props) => props.theme.fontPop};
+  background-color: transparent;
+  z-index: -1;
+
+  .msg {
+    grid-area: msg;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 14px;
+    width: 150px;
+    text-align: center;
+  }
+
+  & ${Paragraph} {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+  }
+`;
+
+export const ImagesFooter = styled.div`
+  width: 17%;
+  display: grid;
+  z-index: -1;
+
+  grid-template-areas:
+    "fb ig lk gm"
+    "unesp unesp unesp unesp";
+
+  a {
+    width: 35px;
+    z-index: 1;
+  }
+  .fb {
+    grid-area: fb;
+    width: 35px;
+    margin-bottom: 8px;
+  }
+  .ig {
+    grid-area: ig;
+    width: 35px;
+  }
+  .lkd {
+    grid-area: lk;
+    width: 35px;
+  }
+  .gm {
+    grid-area: gm;
+    width: 35px;
+  }
+  .unesp {
+    grid-area: unesp;
+    width: 135px;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  margin-right: 0px;
+
+  img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  @media screen and (max-width: 1098px) {
+    img {
+      width: 100%;
+      height: 100%;
+      right: 0;
+      z-index: 0;
+      opacity: 0.3;
+    }
+  }
+`;

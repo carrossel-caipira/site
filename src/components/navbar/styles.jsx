@@ -63,7 +63,7 @@ export const LogoImage = styled.div`
     width: 4.6rem;
 
     @media (max-width: ${(props) => props.theme.deviceMobile}) {
-      width: 3rem;
+      width: 2.9rem;
     }
 
     @media (max-width: ${(props) => props.theme.deviceMobile}) {

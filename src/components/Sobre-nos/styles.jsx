@@ -28,6 +28,22 @@ export const Right = styled.div`
     // width: 46.875em; /* Exemplo */
     width: 700px;
     height: auto;
+
+    @media (max-width: 716px){
+    width: 650px;
+    }
+
+    @media (max-width: 660px){
+    width: 530px;
+    }
+
+    @media (max-width: 539px){
+    width: 450px;
+    }
+
+    @media (max-width: 469px){
+    width: 420px;
+    }
   }
 `;
 

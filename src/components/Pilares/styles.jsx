@@ -44,7 +44,7 @@ export const Section = styled.section`
 `;
 
 export const GridContainer = styled.div`
-  margin-top: -30px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
@@ -89,7 +89,6 @@ export const Card = styled.div`
   @media (max-width: 1780px) {
     font-size: 3rem;
   }
-
 
   @media (max-width: 1680px) {
     font-size: 2.7rem;
@@ -137,10 +136,10 @@ export const Box = styled.div`
   padding: 20px;
   border-radius: 35px;
   display: flex;
-  margin-top: 1.19em;
+  margin-top: 2.8rem;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+
   min-height: 19.5em;
 
   & ${Paragraph} {
@@ -152,7 +151,7 @@ export const Box = styled.div`
 
 export const Icon = styled.img`
   margin-top: 16px;
-  width: 20vh;
+  width: 100vh;
   max-width: 70%;
   height: auto;
 
@@ -201,3 +200,5 @@ export const Icon = styled.img`
     font-size: 1.8rem;
   }
 `;
+
+

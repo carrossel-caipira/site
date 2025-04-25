@@ -10,6 +10,7 @@ import Recrutamento from '../Recrutamento/index.jsx';
 import { Container } from './styles.jsx';
 import GlobalStyles from '../../assets/styles/global.jsx';
 import Footer from '../footer/index.jsx'
+import Hero from '../hero/index.jsx'
 
 function App() {
 
@@ -18,9 +19,10 @@ function App() {
       <ThemeProvider theme={Theme}>
         <GlobalStyles />
         <Container>
-          <Navbar/>
-          <Recrutamento />
+          <Hero/>
+
           <Sobre/>
+          <Recrutamento />
           <Objetivo />
           <Sponsors />
           <Footer />

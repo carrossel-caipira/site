@@ -60,23 +60,6 @@ function History() {
       </Left>
       <Right>
         <img src={Teste}></img>
-
-
-        {/* <CarouselWrapper>
-          <CarouselContainer ref={carouselRef}>
-            {items.map((item, index) => (
-              <Item key={index} style={{ "--index": index + 1 }}>
-                <ItemBody>
-                <img
-                    src={item.src}
-                    alt={item.alt}
-                    style={{ width: "100%", borderRadius: "8px" }}
-                  />
-                </ItemBody>
-              </Item>
-            ))}
-          </CarouselContainer>
-        </CarouselWrapper> */}
       </Right>
     </Hist>
   );
