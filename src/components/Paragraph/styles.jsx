@@ -4,5 +4,5 @@ export const Paragraph = styled.p`
     color: ${props => props.theme.paragraphColor};
     font-family: Poppins;
     font-weight: 500;
-    font-size: 1.150rem;
+    font-size: 1.20rem;
 `

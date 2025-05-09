@@ -27,7 +27,7 @@ export const HeroClip = styled.span`
 `
 
 export const Title = styled.h1`
-  font-size: 9rem;
+  font-size: 7.5rem;
 
   position: absolute;
   top: 50%;

@@ -11,27 +11,27 @@ import aaa3 from "../../assets/images/doisdois(1).png";
 const items = [
   {
     id: 1,
-    title: "COOPERAÇÃO           ",
+    title: "COOPERAÇÃO",
     desc: "Valorizamos a a colaboração e a cooperação entre os integrantes no desenvolvimento do projeto, promovendo a convivência constante para fortalecer o sentimento de união.",
     icon: aaa2,
   },
   {
     id: 2,
     title: "COMPETITIVIDADE",
-    desc: "A competitividade é vista como uma oportunidade de crescimento, que incentiva os estudantes a testarem habilidades, superarem desafios e aprimorarem soluções. Estimamos a troca de ideias e o trabalho em equipe tanto quanto a vitória.",
+    desc: "A competitividade incentiva os estudantes a testarem habilidades, superarem desafios e aprimorarem soluções. Estimamos a troca de ideias e o trabalho em equipe tanto quanto a vitória.",
     icon: aaa3,
   },
   {
     id: 3,
     title: "PESQUISA",
-    desc: "Nossa equipe foca em um aprendizado que vai além da aplicação de uma stack tecnológica. Ao aliar pesquisa e prática, promovemos um ambiente dinâmico, onde curiosidade e inovação são pilares essenciais do conhecimento",
+    desc: "Promovemos um aprendizado que vai além da aplicação de uma stack tecnológica. Ao aliar pesquisa e prática, promovemos um ambiente onde curiosidade e inovação são pilares do conhecimento",
     icon: aaa1,
   },
 ];
 
 function Objetivos() {
   return (
-    <Section>
+    <Section className="pilares">
       <Title style={{alignSelf: "flex-start"}}>NOSSOS</Title>
       <GridContainer>
         {items.map((item) => (

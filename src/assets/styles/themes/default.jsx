@@ -17,7 +17,7 @@ export default {
   margin_l: "1em",
   margin_xl: "1.618em",
   margin_xxl: "2.618em",
-  margin_sections: "16.7em",
+  margin_sections: "16.25em",
 
   // fonts
   fontPop: "Poppins",

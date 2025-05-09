@@ -20,10 +20,6 @@ export const Rec = styled.div`
     color: white;
     text-align: center;
     margin-bottom: 20px;
-
-
-    @media (max-width: 1800px) {
-    font-size: 3.25rem;
   }
 
   @media (max-width: 800px) {
@@ -41,7 +37,7 @@ export const Rec = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   background-color: ${props => props.theme.buttonColor};
   color: white;
   font-size: 1.25rem;

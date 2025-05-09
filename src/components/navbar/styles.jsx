@@ -3,20 +3,11 @@ import { Link } from "react-scroll";
 
 const purple = "#a04ccc";
 
-const fadeIn = keyframes`
-  from {
-    background-color: rgba(255, 255, 255, 1);
-  }
-  to {
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-`;
-
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 95px;
+  height: 80px;
   color: white;
   top: 0;
   font-family: Advent Pro;
@@ -25,7 +16,6 @@ export const Nav = styled.nav`
   color: ${(props) => props.theme.darkBg};
 
   width: 100vw;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
   padding: 0 80px;
   transition: background-color 0.3s ease;
@@ -35,6 +25,8 @@ export const Nav = styled.nav`
     padding: 0 35px;
   }
 
+  backdrop-filter: blur(5px);
+  z-index: 5;
 `;
 
 export const Logo = styled(Link)`
@@ -44,7 +36,7 @@ export const Logo = styled(Link)`
   align-items: center;
   gap: 1rem;
   flex-grow: 1;
-  height: 100%
+  height: 100%;
 
 
   @media (max-width: ${(props) => props.theme.deviceMobile}) {
@@ -60,7 +52,7 @@ export const LogoImage = styled.div`
   transition: transform 0.7s ease;
 
   img {
-    width: 4.6rem;
+    height: 55px;
 
     @media (max-width: ${(props) => props.theme.deviceMobile}) {
       width: 2.9rem;
@@ -77,17 +69,11 @@ export const LogoImage = styled.div`
 `;
 
 export const LogoText = styled.span`
-  // font-size: 3rem;
-
-  // @media (max-width: ${(props) => props.theme.deviceMobile}) {
-  //   font-size: 2rem;
-  // }
-
-  font-size: 2.16rem;
+  font-size: 2rem;
   font-weight: 600;
 
   @media (max-width: 1024px) {
-    font-size: 2.05rem;
+    font-size: 1.85rem;
   }
 
   @media (max-width: 650px) {
@@ -106,15 +92,16 @@ export const LogoText = styled.span`
 export const LinkItems = styled.div`
   display: flex;
   align-items: center;
-  gap: 7vw;
+  gap: 5vw;
   font-size: 2rem;
+  font-size: 1.7rem;
 
   @media (max-width: 1025px) {
     display: none;
   }
 
   @media (max-width: 1024px) {
-    font-size: 1.95rem;
+    font-size: 1.5rem;
   }
 `;
 

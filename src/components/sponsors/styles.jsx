@@ -7,11 +7,11 @@ export const Patrocinadores = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-color: ${(props) => props.theme.lightBg};
   position: relative;
   margin-bottom: calc(${(props) => props.theme.margin_sections}/2);
 
   & ${Title} {
+    font-size: 4.25rem;
     color: ${(props) => props.theme.buttonColor};
     margin-bottom: ${(props) => props.theme.margin_l};
   }

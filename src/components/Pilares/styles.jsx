@@ -21,7 +21,8 @@ export const Section = styled.section`
     color: ${(props) => props.theme.darkBg};
     font-weight: 800;
     letter-spacing: 0.1px;
-    font-size: 8rem;
+
+    font-size: 7.5rem;
 
     @media (max-width: 650px) {
 
@@ -45,12 +46,12 @@ export const Section = styled.section`
 `;
 
 export const GridContainer = styled.div`
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 17px;
+  margin-bottom: 17px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
-  gap: 60px;
+  gap: 40px;
   width: calc(100% - 100px)
   max-width: 100vw;
 
@@ -110,6 +111,7 @@ export const Box = styled.div`
   height: 100%;
 
   & ${Paragraph} {
+    font-size: 1.05rem; /* larp */
     text-align: left;
     margin: 0;
   }
@@ -157,7 +159,7 @@ export const Box = styled.div`
 export const Icon = styled.img`
   margin-top: 16px;
   width: 100vh;
-  max-width: 70%;
+  max-width: 65%;
   height: auto;
 
   @media (max-width: 1800px) {

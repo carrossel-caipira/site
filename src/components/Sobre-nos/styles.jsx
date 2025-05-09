@@ -25,8 +25,7 @@ export const Right = styled.div`
   justify-content: center;
 
   img {
-    // width: 46.875em; /* Exemplo */
-    width: 700px;
+    width: 34rem; /* Exemplo */
     height: auto;
 
     @media (max-width: 716px){
@@ -56,26 +55,26 @@ export const Left = styled.div`
 
 export const TitleR = styled.div`
   width: 100%;
+  margin-bottom: 1.5rem;
 
   & ${Title} {
-    font-size: 10rem;
     font-weight: 600;
     color: #a04ccc;
 
     @media (max-width: 650px) {
 
-    font-size: 7.8rem;
+    font-size: 7rem;
 
     }
 
     @media (max-width: 450px) {
 
-    font-size: 6.8rem;
+    font-size: 6rem;
 
     }
     @media (max-width: 380px) {
 
-    font-size: 5.7rem;
+    font-size: 5rem;
 
     }
   }
@@ -85,7 +84,6 @@ export const Text = styled.div`
   width: 100%;
 
   & ${Paragraph} {
-    font-size: 1.6rem;
     text-align: left;
 
     @media (max-width: 600px) {
@@ -104,17 +102,10 @@ export const Text = styled.div`
 
   & ${SubTitle} {
     color: ${(props) => props.theme.darkBg};
-
-    font-size: 2.5rem;
-
-    @media (max-width: 2685px) {
-      font-size: 2.8rem;
-    }
+    margin-bottom: 1rem;
 
     @media (max-width: 500px) {
-
-    font-size: 2.3rem;
-
+      font-size: 1rem;
     }
 
 
