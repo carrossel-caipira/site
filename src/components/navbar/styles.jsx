@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-scroll";
 
+const purple = "#a04ccc";
+
 const fadeIn = keyframes`
   from {
     background-color: rgba(255, 255, 255, 1);
@@ -14,7 +16,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 105px;
+  height: 95px;
   color: white;
   top: 0;
   font-family: Advent Pro;
@@ -24,7 +26,7 @@ export const Nav = styled.nav`
 
   width: 100vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: fixed;
   padding: 0 80px;
   transition: background-color 0.3s ease;
 
@@ -33,17 +35,11 @@ export const Nav = styled.nav`
     padding: 0 35px;
   }
 
-  &.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100vw;
-    animation: ${fadeIn} 0.5s ease forwards;
-  }
 `;
 
-export const Logo = styled.div`
+export const Logo = styled(Link)`
+  cursor: pointer;
+
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -53,6 +49,10 @@ export const Logo = styled.div`
 
   @media (max-width: ${(props) => props.theme.deviceMobile}) {
     gap: 0.5rem;
+  }
+
+  &:hover > . {
+    color: ${purple};
   }
 `;
 
@@ -97,6 +97,10 @@ export const LogoText = styled.span`
    @media (max-width: 380px) {
     font-size: 1.3rem;
   }
+
+  &:hover {
+    color: ${purple};
+  }
 `;
 
 export const LinkItems = styled.div`
@@ -123,6 +127,10 @@ export const NavLink = styled(Link)`
 
   @media (max-width: ${(props) => props.theme.deviceMobile}) {
     font-size: 1.2rem;
+  }
+
+  &:hover {
+    color: ${purple};
   }
 `;
 

@@ -5,7 +5,8 @@ import { Nav, Logo, LogoText, LogoImage, LinkItems, NavLink, Hamburger, MobileMe
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
+  // const [isSticky, setIsSticky] = useState(false);
+  const [opacity, setOpacity] = useState(0.7);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1025);
 
   const toggleMenu = () => {
@@ -21,12 +22,8 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
+      setOpacity(Math.max(0.7 - 50*window.scrollY/window.innerHeight, 0.2));
+    }
 
     window.addEventListener('resize', handleResize);
     window.addEventListener('scroll', handleScroll);
@@ -38,8 +35,9 @@ function Navbar() {
   }, [handleResize]);
 
   return (
-    <Nav className={isSticky ? 'sticky' : ''}>
-      <Logo>
+    //<Nav className={isSticky ? 'sticky' : ''}>
+    <Nav style={{backgroundColor: `rgba(255, 255, 255, ${opacity})`}}>
+      <Logo to="hero" smooth={true} spy={true} duration={500}>
         <LogoImage>
           <img src={logo} alt="Logo.carrosel" />
         </LogoImage>
