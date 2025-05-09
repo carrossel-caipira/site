@@ -10,11 +10,12 @@ export const Section = styled.section`
   min-height: 70vh;
   width: 100vw;
   background-color: white;
-  padding-right:50px;
-  padding-left:50px;
   text-align: center;
   Margin-top: 0px;
   margin-bottom: ${(props) => props.theme.margin_sections};
+
+  width: 80%;
+  align-self: center;
 
   & ${Title} {
     color: ${(props) => props.theme.darkBg};
@@ -45,6 +46,7 @@ export const Section = styled.section`
 
 export const GridContainer = styled.div`
   margin-top: 30px;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
@@ -69,10 +71,11 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   background: ${(props) => props.theme.darkBg};
-  padding: 1em;
+  padding: 1.5em;
   border-radius: 35px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  min-height: 550px;
+
+  min-height: 400px;
 
   @media (max-width: 980px) {
     min-height: auto;
@@ -86,6 +89,33 @@ export const Card = styled.div`
     text-align: center;
     letter-spacing: 1px;
 
+`;
+export const HeaderBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Box = styled.div`
+  background-color: white;
+  width: auto;
+  padding: 20px;
+  border-radius: 35px;
+  display: flex;
+  margin-top: 2.8rem;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+
+  & ${Paragraph} {
+    text-align: left;
+    margin: 0;
+  }
+`;
+
+/*
   @media (max-width: 1780px) {
     font-size: 3rem;
   }
@@ -122,32 +152,7 @@ export const Card = styled.div`
     font-size: 1.8rem;
   }
   }
-`;
-export const HeaderBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const Box = styled.div`
-  background-color: white;
-  width: auto;
-  padding: 20px;
-  border-radius: 35px;
-  display: flex;
-  margin-top: 2.8rem;
-  flex-direction: column;
-  align-items: center;
-
-  min-height: 19.5em;
-
-  & ${Paragraph} {
-  font-size: 1.4rem;
-    text-align: left;
-    margin: 0;
-  }
-`;
+*/
 
 export const Icon = styled.img`
   margin-top: 16px;

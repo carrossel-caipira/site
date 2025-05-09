@@ -11,15 +11,15 @@ import aaa3 from "../../assets/images/doisdois(1).png";
 const items = [
   {
     id: 1,
-    title: "COMPETITIVIDADE",
-    desc: "A competitividade é vista como uma oportunidade de crescimento, que incentiva os estudantes a testarem habilidades, superarem desafios e aprimorarem soluções. Estimamos a troca de ideias e o trabalho em equipe tanto quanto a vitória.",
-    icon: aaa3,
-  },
-  {
-    id: 2,
     title: "COOPERAÇÃO           ",
     desc: "Valorizamos a a colaboração e a cooperação entre os integrantes no desenvolvimento do projeto, promovendo a convivência constante para fortalecer o sentimento de união.",
     icon: aaa2,
+  },
+  {
+    id: 2,
+    title: "COMPETITIVIDADE",
+    desc: "A competitividade é vista como uma oportunidade de crescimento, que incentiva os estudantes a testarem habilidades, superarem desafios e aprimorarem soluções. Estimamos a troca de ideias e o trabalho em equipe tanto quanto a vitória.",
+    icon: aaa3,
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const items = [
 function Objetivos() {
   return (
     <Section>
-      <Title>NOSSOS PILARES</Title>
+      <Title style={{alignSelf: "flex-start"}}>NOSSOS</Title>
       <GridContainer>
         {items.map((item) => (
           <Card key={item.id}>
@@ -46,6 +46,7 @@ function Objetivos() {
           </Card>
         ))}
       </GridContainer>
+      <Title style={{alignSelf: "flex-end"}}>PILARES</Title>
     </Section>
   );
 }
