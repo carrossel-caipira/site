@@ -9,7 +9,7 @@ export const Patrocinadores = styled.div`
   width: 100vw;
   background-color: ${(props) => props.theme.lightBg};
   position: relative;
-  margin-bottom: ${(props) => props.theme.margin_sections};
+  margin-bottom: calc(${(props) => props.theme.margin_sections}/2);
 
   & ${Title} {
     color: ${(props) => props.theme.buttonColor};

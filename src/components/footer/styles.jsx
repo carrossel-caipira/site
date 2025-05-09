@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import Paragraph from "../Paragraph";
+
+const footerHeight = "32.5vh";
+
 export const Background = styled.div`
   display: grid;
   width: 100%;
-  min-height: 49vh;
+  min-height: ${footerHeight};
   grid-template-areas:
     "texto"
     "copy";
@@ -20,8 +23,10 @@ export const TextFooter = styled.div`
   color: white;
   background-color: transparent;
   width: 100%;
-  min-height: 49vh;
+  min-height: ${footerHeight};
   font-family: ${(props) => props.theme.fontBow};
+
+  z-index: 2;
 `;
 
 export const Copy = styled.div`
@@ -37,24 +42,24 @@ export const Copy = styled.div`
 
   ${Paragraph} {
     color: ${(props) => props.theme.darkBg};
-    font-size: 1rem;
+    font-size: .8rem;
     margin: 0;
     max-width: 90%;
     word-break: break-word;
 
     @media (max-width: 500px){
-      font-size: 0.8rem;
+      font-size: 0.75rem;
     }
 
     @media (max-width: 450px){
-      font-size: 0.75rem;
+      font-size: 0.7rem;
     }
   }
 `;
 
 export const Where = styled.div`
   margin-left: 5%;
-  margin-top: 2.2rem;
+  margin-top: 1.5rem;
   width: 500px;
   background-color: transparent;
   z-index: -1;
@@ -62,7 +67,7 @@ export const Where = styled.div`
 
 export const Contact = styled.div`
   margin-left: 5%;
-  margin-top: 1.2rem;
+  margin-top: 1rem;
   background-color: transparent;
   margin-bottom: 3vh;
   z-index: -1;
@@ -70,7 +75,7 @@ export const Contact = styled.div`
 
 export const TittleFooter = styled.div`
   color: white;
-  font-size: 1.65rem;
+  font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
 `;
@@ -141,21 +146,21 @@ export const ImageWrapper = styled.div`
   height: 100%;
   z-index: 0;
   margin-right: 0px;
+  right: -10%;
 
   img {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 70%;
-    height: 100%;
+    right: 0px;
+    top: -45%;
+    width: 80%;
     object-fit: cover;
     z-index: 0;
+    opacity: 0.8;
   }
 
   @media screen and (max-width: 1098px) {
     img {
       width: 100%;
-      height: 100%;
       right: 0;
       z-index: 0;
       opacity: 0.3;

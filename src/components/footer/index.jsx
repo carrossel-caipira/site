@@ -10,7 +10,7 @@ import {
   Info,
   ImagesFooter,
 } from "./styles.jsx";
-import logo from "../../assets/images/logo_footer.svg";
+import logo from "../../assets/images/logo_gradiente.png";
 import fb from "../../assets/images/logo_fb.svg";
 import ig from "../../assets/images/logo_ig.svg";
 import gm from "../../assets/images/logo_gm.svg";
@@ -57,7 +57,7 @@ function Footer() {
         </Contact>
       </TextFooter>
       <Copy>
-        <Paragraph>Copyright - 2024 Carrossel Caipira</Paragraph>©
+        <Paragraph>© Copyright - 2024 Carrossel Caipira</Paragraph>
       </Copy>
     </Background>
   );
