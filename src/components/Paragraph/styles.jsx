@@ -5,4 +5,8 @@ export const Paragraph = styled.p`
     font-family: Poppins;
     font-weight: 500;
     font-size: 1.20rem;
+
+    @media(max-width: ${props => props.theme.deviceMobile}) {
+        text-align: center;
+    }
 `

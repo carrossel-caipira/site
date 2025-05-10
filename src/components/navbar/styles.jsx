@@ -38,7 +38,6 @@ export const Logo = styled(Link)`
   flex-grow: 1;
   height: 100%;
 
-
   @media (max-width: ${(props) => props.theme.deviceMobile}) {
     gap: 0.5rem;
   }
@@ -53,14 +52,8 @@ export const LogoImage = styled.div`
 
   img {
     height: 55px;
-
-    @media (max-width: ${(props) => props.theme.deviceMobile}) {
-      width: 2.9rem;
-    }
-
-    @media (max-width: ${(props) => props.theme.deviceMobile}) {
-      width: 2.3rem;
-    }
+    aspect-ratio: 1;
+    width: 100%;
   }
 
   &:hover {

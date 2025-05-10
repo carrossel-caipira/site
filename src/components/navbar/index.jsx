@@ -58,13 +58,13 @@ function Navbar() {
         </NavLink>
       </LinkItems>
       <MobileMenu isOpen={isOpen}>
-      <NavLink onClick={toggleMenu} to="hero" smooth={true} spy={true} offset={-70} duration={500}>
-          Inicio
+        <NavLink to="historia" smooth={true} spy={true} offset={-160} duration={500}>
+          Sobre nós
         </NavLink>
-        <NavLink onClick={toggleMenu} to="historia" smooth={true} spy={true} offset={-70} duration={500}>
-          História
+        <NavLink to="pilares" smooth={true} spy={true} duration={500} offset={-70}>
+          Piláres
         </NavLink>
-        <NavLink onClick={toggleMenu} to="contato" smooth={true} spy={true} offset={-70} duration={500}>
+        <NavLink to="contato" smooth={true} spy={true} offset={-70} duration={500}>
           Contato
         </NavLink>
       </MobileMenu>

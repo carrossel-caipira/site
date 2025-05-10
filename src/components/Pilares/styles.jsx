@@ -114,6 +114,10 @@ export const Box = styled.div`
     font-size: 1.05rem; /* larp */
     text-align: left;
     margin: 0;
+
+    @media (max-width: ${props => props.theme.deviceMobile}) {
+        text-align: center;
+    }
   }
 `;
 

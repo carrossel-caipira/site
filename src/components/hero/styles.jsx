@@ -27,12 +27,18 @@ export const HeroClip = styled.span`
 `
 
 export const Title = styled.h1`
-  font-size: 7.5rem;
+  font-size: min(7.5rem, 12vw);
 
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 7.5%;
+  z-index: 1;
+
+  @media(max-width: 750px) {
+    text-align: center;
+    font-size: 15vw;
+  }
 `;
 
 const bobAnimation = keyframes`
@@ -53,15 +59,26 @@ export const LogoTop = styled.img`
   width: 12.5vw;
 `
 
+const logoSize = "65"; // em vh
+
 export const LogoBottom = styled.img`
   display: inline-block;
-  width: 35vw;
+  width: ${logoSize}vh;
   aspect-ratio: 1;
 
   position: relative;
-  top: calc(87.5vh - 17.5vw);
-  left: calc(70vw - 17.5vw);
+  top: calc(87.5vh - ${logoSize/2}vh);
+  left: calc(70vw - ${logoSize/2}vh);
 
   animation: ${bobAnimation} 10s infinite alternate;
+
+  /* @media(max-width: ${props => props.theme.deviceMobile}) { */
+  @media(max-width: 750px) {
+    width: 110vh;
+    object-fit: cover;
+    opacity: 0.3;
+    top: 17.5vh;
+    left: -5vw;
+  }
 `;
 

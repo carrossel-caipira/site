@@ -11,7 +11,7 @@ export const Patrocinadores = styled.div`
   margin-bottom: calc(${(props) => props.theme.margin_sections}/2);
 
   & ${Title} {
-    font-size: 4.25rem;
+    font-size: min(4.25rem, 7.5vw);
     color: ${(props) => props.theme.buttonColor};
     margin-bottom: ${(props) => props.theme.margin_l};
   }

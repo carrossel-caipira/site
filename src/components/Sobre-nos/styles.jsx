@@ -84,20 +84,13 @@ export const Text = styled.div`
   width: 100%;
 
   & ${Paragraph} {
-    text-align: left;
-
     @media (max-width: 600px) {
-
-    font-size: 1.3rem;
-
+      font-size: 1.3rem;
     }
 
     @media (max-width: 380px) {
-
-    font-size: 1.1rem;
-
+      font-size: 1.1rem;
     }
-
   }
 
   & ${SubTitle} {
