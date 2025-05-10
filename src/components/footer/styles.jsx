@@ -101,6 +101,11 @@ export const Info = styled.div`
     color: white;
     margin-bottom: 1rem;
     font-size: 1.15rem;
+
+    @media(max-width: ${props => props.theme.deviceMobile}) {
+        text-align: left;
+    }
+
   }
 `;
 
@@ -112,6 +117,8 @@ export const ImagesFooter = styled.div`
   grid-template-areas:
     "fb ig lk gm"
     "unesp unesp unesp unesp";
+
+  gap: 5px;
 
   a {
     width: 35px;
@@ -137,6 +144,7 @@ export const ImagesFooter = styled.div`
   .unesp {
     grid-area: unesp;
     width: 135px;
+    margin-top: -5px;
   }
 `;
 

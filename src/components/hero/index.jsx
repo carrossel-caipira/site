@@ -13,7 +13,7 @@ function Hero() {
       <HeroClip>
         <img src={back} alt="Background logo" />
 
-        <Title>CARROSSEL<br/>CAIPIRA</Title>
+        <Title>{`CARROSSEL\nCAIPIRA`}</Title>
 
         <LogoTop src={logoSpinni} alt="carrossel redondo"/>
         <LogoBottom src={logo} alt="logo carrossel"/>

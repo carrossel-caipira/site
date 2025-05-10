@@ -34,6 +34,7 @@ export const Title = styled.h1`
   transform: translateY(-50%);
   left: 7.5%;
   z-index: 1;
+  white-space: pre-line;
 
   @media(max-width: 750px) {
     text-align: center;
