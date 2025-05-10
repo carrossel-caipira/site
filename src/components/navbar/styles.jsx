@@ -52,8 +52,8 @@ export const LogoImage = styled.div`
 
   img {
     height: 55px;
-    aspect-ratio: 1;
-    width: 100%;
+    width: 55px;
+    object-fit: contain;
   }
 
   &:hover {
