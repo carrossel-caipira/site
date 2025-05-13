@@ -8,8 +8,9 @@ export const Background = styled.div`
   width: 100%;
   min-height: ${footerHeight};
   grid-template-areas:
-    "texto"
-    "copy";
+    "texto texto"
+    "copy copy";
+    grid-template-columns: 1fr 1fr;
   background-color: ${(props) => props.theme.darkBg};
   margin-bottom: 0 !important;
   overflow: hidden;
@@ -40,11 +41,12 @@ export const Copy = styled.div`
   z-index: 1;
   text-align: center;
 
+
   ${Paragraph} {
     color: ${(props) => props.theme.darkBg};
     font-size: .8rem;
     margin: 0;
-    max-width: 90%;
+    max-width: 100%;
     word-break: break-word;
 
     @media (max-width: 500px){
@@ -52,6 +54,10 @@ export const Copy = styled.div`
     }
 
     @media (max-width: 450px){
+      font-size: 0.7rem;
+    }
+
+    @media (max-width: 380px){
       font-size: 0.7rem;
     }
   }
@@ -168,8 +174,10 @@ export const ImageWrapper = styled.div`
 
   @media screen and (max-width: 1098px) {
     img {
+
       width: 100%;
       right: 0;
+      top: 0;
       z-index: 0;
       opacity: 0.3;
     }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SubTitle = styled.h2`
   font-family: Poppins;
   color: ${(props) => props.theme.subTitleColor};
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   line-height: 2;
   font-weight: 900;
   height: fit-content;

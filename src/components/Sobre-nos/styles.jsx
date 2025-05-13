@@ -84,6 +84,8 @@ export const Text = styled.div`
   width: 100%;
 
   & ${Paragraph} {
+    font-size: 1.35rem;
+
     @media (max-width: 600px) {
       font-size: 1.3rem;
     }
@@ -98,15 +100,9 @@ export const Text = styled.div`
     margin-bottom: 1rem;
 
     @media (max-width: 500px) {
-      font-size: 1rem;
+      font-size: 1.8rem;
     }
 
-
-    @media (max-width: 380px) {
-
-    font-size: 1.8rem;
-
-    }
   }
 `;
 
