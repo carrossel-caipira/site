@@ -1,12 +1,13 @@
-import background from "../../images/background2.png";
+import background from "../../images/background2.png"; //adicionar nova imagem de background
+import '@fontsource/poppins/600.css'
 
 export default {
   darkBg: "#002653",
   lightBg: "#FFFFFF",
-  titleColor: "#63B3D2",
-  titleColor2: "#52CC52",
+  buttonColor: "#a047cc",
   subTitleColor: "#454545",
-  paragraphColor: "#6B6B6B",
+  paragraphColor: "#546e8b",
+
   colorBgCopy: "#131313",
 
   // spacing
@@ -16,10 +17,11 @@ export default {
   margin_l: "1em",
   margin_xl: "1.618em",
   margin_xxl: "2.618em",
+  margin_sections: "16.25rem",
 
   // fonts
   fontPop: "Poppins",
-  fontBow: "Bowlby One Sc",
+  fontPopSemiBold: "Poppins-Semi-Bold",
 
   // devices
   deviceMobile: "650px",

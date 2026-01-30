@@ -1,47 +1,26 @@
 import React, { useState } from 'react';
-import { HeroS, RobotImg, DivMeio, Texto, Botaoimg, Linkz } from './styles';
+import { HeroS, HeroClip, Title, LogoTop, LogoBottom } from './styles';
 import Navbar from '../navbar/index.jsx';
-import imagem from '../../assets/images/robozin.png';
-import titulohero from '../../assets/images/titulo_hero.svg';
-import imgbutao from '../../assets/images/angles-down-solid.svg';
-import backzao from '../../assets/images/background.svg';
+import back from '../../assets/images/background2.png';
+import logo from '../../assets/images/logo_gradiente.png';
+import logoSpinni from '../../assets/images/variação_nome.png';
 
 
 function Hero() {
-  const [clicked, setClicked] = useState(false);
-
-
-  const handleClick = () => {
-    setClicked(true);
-
-
-    setTimeout(() => {
-      setClicked(false);
-    }, 300);
-  };
-
   return (
+    <><Navbar />
     <HeroS className='hero'>
-      <Navbar />
-      <DivMeio >
-        <Texto src={titulohero} alt="titulo hero" />
-        <RobotImg src={imagem} alt="robo carrossel" />
-      </DivMeio>
-      <Linkz
-        to="about-us"
-        smooth={true}
-        spy={true}
-        offset={-130}
-        duration={500}
-      >
-        <Botaoimg
-          src={imgbutao}
-          onClick={handleClick}
-          className={clicked ? 'clicked' : ''}
-        />
+      <HeroClip>
+        <img src={back} alt="Background logo" />
 
-      </Linkz>
+        <Title>{`CARROSSEL\nCAIPIRA`}</Title>
+
+        <LogoTop src={logoSpinni} alt="carrossel redondo"/>
+        <LogoBottom src={logo} alt="logo carrossel"/>
+      </HeroClip>
+      <LogoBottom src={logo} alt="logo carrossel" style={{filter: "grayscale(1)", zIndex: "-2", opacity: "0.4"}}/>
     </HeroS>
+    </>
   );
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import Title from '../Title/'
+import SubTitle from '../SubTitle/'
 import Recogna from '../../assets/images/recogna.svg'
-import backzao from '../../assets/images/background.svg';
-import { Patrocinadores, StainTop, StainBottom, MainImage } from './styles.jsx';
+import { Patrocinadores, MainImage } from './styles.jsx';
 
 function Sponsors() {
     return (

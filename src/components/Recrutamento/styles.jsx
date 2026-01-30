@@ -8,36 +8,48 @@ export const Rec = styled.div`
   justify-content: center;
   min-height: 40vh;
   width: 100vw;
-  // background-color: ${(props) => props.theme.titleColor};
+  background-color: ${(props) => props.theme.titleColor};
   background-image: url(${(props) => props.theme.backgroundImage});
   background-size: cover;
   background-position: center;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  margin-bottom: ${props => props.theme.margin_sections};
 
   & ${SubTitle} {
     color: white;
-    font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
   }
+
+  @media (max-width: 800px) {
+    font-size: 2.8rem;
+  }
+
+    @media (max-width: 550px) {
+    font-size: 1.9rem;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.6rem;
+  }
+
+  }
 `;
 
-export const Button = styled.button`
-  background-color: ${props => props.theme.titleColor2};
+export const Button = styled.a`
+  background-color: ${props => props.theme.buttonColor};
   color: white;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: ${props => props.theme.fontPop};
   font-weight: bold;
   border: none;
-  padding: 12px 24px;
+  padding: 12px 46px;
   border-radius: 28px;
   cursor: pointer;
   transition: background 0.3s ease;
 
   &:hover {
-    background-color: #ddd;
+    background-color: ${props => props.theme.darkBg};
   }
 `;

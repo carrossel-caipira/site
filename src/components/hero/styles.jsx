@@ -2,97 +2,84 @@ import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const HeroS = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 100vh;
   width: 100vw;
-  background-image: url(${(props) => props.theme.backgroundImage});
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow: hidden;
+  height: 100vh;
+
+  font-family: Poppins;
+  color: white;
+
+  :first-child {
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100vh;
+  }
+
+  margin-bottom: ${props => props.theme.marginxxl} + 200px;
 `;
 
-export const DivMeio = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10vw;
-  height: 65vh;
+export const HeroClip = styled.span`
+  width: 100vw;
+  height: 100vh;
 
-  @media(max-width: ${props => props.theme.deviceMobile}) {
-    height: auto;
-    flex-direction: column;
-    gap: 5vh;
+  overflow: hidden;
+`
+
+export const Title = styled.h1`
+  font-size: min(7.5rem, 12vw);
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 7.5%;
+  z-index: 1;
+  white-space: pre-line;
+
+  @media(max-width: 750px) {
+    text-align: center;
+    font-size: 15vw;
   }
 `;
 
-export const RobotImg = styled.img`
-  max-height: 100%;
-  width: min(32vw, 65vh);
+const bobAnimation = keyframes`
+  0% {
+    transform: translateY(0) rotate(0deg);
+  } 66.666% {
+    transform: translateY(calc(-5% - 5px)) rotate(15deg);
+  } 100% {
+    transform: translateY(calc(2.5% + 2.5px)) rotate(0deg);
+`
+
+export const LogoTop = styled.img`
+  animation: ${bobAnimation} 5s infinite alternate;
+
+  position: absolute;
+  top: 15vh;
+  right: 7.5vw;
+  width: 12.5vw;
+`
+
+const logoSize = "65"; // em vh
+
+export const LogoBottom = styled.img`
+  display: inline-block;
+  width: ${logoSize}vh;
   aspect-ratio: 1;
 
-  @media(max-width: ${props => props.theme.deviceMobile}) {
-    width: 80vw;
+  position: relative;
+  top: calc(87.5vh - ${logoSize/2}vh);
+  left: calc(70vw - ${logoSize/2}vh);
+
+  animation: ${bobAnimation} 10s infinite alternate;
+
+  /* @media(max-width: ${props => props.theme.deviceMobile}) { */
+  @media(max-width: 750px) {
+    width: 110vh;
+    object-fit: cover;
+    opacity: 0.3;
+    top: 17.5vh;
+    left: -5vw;
   }
 `;
 
-export const Texto = styled.img`
-  max-width: 1200px;
-  width: 40vw;
-
-  @media(max-width: ${props => props.theme.deviceMobile}) {
-    width: 80vw;
-  }
-`;
-
-const fadeIn = keyframes`
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.7;
-  }
-`;
-
-const arrowDownAnimation = keyframes`
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-`;
-
-export const Botaoimg = styled.img`
-  max-width: 60px;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  animation: ${arrowDownAnimation} 2s infinite;
-
-  &:hover {
-    opacity: 0.7;
-    animation-play-state: paused;
-  }
-
-  &.clicked {
-    animation: ${fadeIn} 0.3s ease;
-  }
-`;
-
-export const Linkz = styled(Link)`
-  cursor: pointer;
-  max-width: 60px;
-  width: 7.5vw;
-  margin-block: 5vh;
-
-  @media(max-width: ${props => props.theme.deviceMobile}) {
-    width: 10vh;
-  }
-`;

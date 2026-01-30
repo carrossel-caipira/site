@@ -1,16 +1,22 @@
 import styled from "styled-components";
+import Paragraph from "../Paragraph";
+
+const footerHeight = "32.5vh";
 
 export const Background = styled.div`
   display: grid;
-  width: 100vw;
+  width: 100%;
+  min-height: ${footerHeight};
   grid-template-areas:
-    "texto"
-    "copy";
+    "texto texto"
+    "copy copy";
+    grid-template-columns: 1fr 1fr;
   background-color: ${(props) => props.theme.darkBg};
   margin-bottom: 0 !important;
   overflow: hidden;
-  position: sticky;
+  position: relative;
   height: auto;
+  font-family: Poppins;
 `;
 
 export const TextFooter = styled.div`
@@ -18,30 +24,48 @@ export const TextFooter = styled.div`
   color: white;
   background-color: transparent;
   width: 100%;
+  min-height: ${footerHeight};
   font-family: ${(props) => props.theme.fontBow};
+
+  z-index: 2;
 `;
 
 export const Copy = styled.div`
-  background-color: ${(props) => props.theme.colorBgCopy};
   grid-area: copy;
-  height: 7vh;
+  width: 100%;
+  height: 50px;
+  background-color: white;
   display: flex;
-  color: white;
   justify-content: center;
-  text-align: center;
   align-items: center;
-  font-family: ${(props) => props.theme.fontPop};
-  font-size: 15px;
   z-index: 1;
+  text-align: center;
 
-  @media screen and (max-width: 768px) {
-    font-size: 13px;
+
+  ${Paragraph} {
+    color: ${(props) => props.theme.darkBg};
+    font-size: .8rem;
+    margin: 0;
+    max-width: 100%;
+    word-break: break-word;
+
+    @media (max-width: 500px){
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 450px){
+      font-size: 0.7rem;
+    }
+
+    @media (max-width: 380px){
+      font-size: 0.7rem;
+    }
   }
 `;
 
 export const Where = styled.div`
   margin-left: 5%;
-  margin-top: 3vh;
+  margin-top: 1.5rem;
   width: 500px;
   background-color: transparent;
   z-index: -1;
@@ -49,7 +73,7 @@ export const Where = styled.div`
 
 export const Contact = styled.div`
   margin-left: 5%;
-  margin-top: 5vh;
+  margin-top: 1rem;
   background-color: transparent;
   margin-bottom: 3vh;
   z-index: -1;
@@ -57,16 +81,13 @@ export const Contact = styled.div`
 
 export const TittleFooter = styled.div`
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 800;
+  margin-bottom: 0.5rem;
 `;
 
 export const Info = styled.div`
-  width: 50%;
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: justify;
-  margin-top: 3vh;
+  width: 65%;
   font-family: ${(props) => props.theme.fontPop};
   background-color: transparent;
   z-index: -1;
@@ -81,16 +102,29 @@ export const Info = styled.div`
     width: 150px;
     text-align: center;
   }
+
+  & ${Paragraph} {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+
+    @media(max-width: ${props => props.theme.deviceMobile}) {
+        text-align: left;
+    }
+
+  }
 `;
 
 export const ImagesFooter = styled.div`
-  width: 15%;
+  width: 17%;
   display: grid;
-  z-index:-1;
+  z-index: -1;
 
   grid-template-areas:
     "fb ig lk gm"
     "unesp unesp unesp unesp";
+
+  gap: 5px;
 
   a {
     width: 35px;
@@ -98,23 +132,25 @@ export const ImagesFooter = styled.div`
   }
   .fb {
     grid-area: fb;
-    width: 25px;
+    width: 35px;
+    margin-bottom: 8px;
   }
   .ig {
     grid-area: ig;
-    width: 25px;
+    width: 35px;
   }
   .lkd {
     grid-area: lk;
-    width: 25px;
+    width: 35px;
   }
   .gm {
     grid-area: gm;
-    width: 25px;
+    width: 35px;
   }
   .unesp {
     grid-area: unesp;
-    width: 150px;
+    width: 135px;
+    margin-top: -5px;
   }
 `;
 
@@ -124,22 +160,24 @@ export const ImageWrapper = styled.div`
   height: 100%;
   z-index: 0;
   margin-right: 0px;
+  right: -10%;
 
   img {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 70%;
-    height: 100%;
+    right: 0px;
+    top: -45%;
+    width: 80%;
     object-fit: cover;
     z-index: 0;
+    opacity: 0.8;
   }
 
   @media screen and (max-width: 1098px) {
     img {
+
       width: 100%;
-      height: 100%;
       right: 0;
+      top: 0;
       z-index: 0;
       opacity: 0.3;
     }
